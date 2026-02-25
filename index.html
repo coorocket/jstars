@@ -156,7 +156,22 @@
     }
     .hero__line--accent { color: var(--accent); }
     .hero__lead { margin: 0 0 18px; color: rgba(17,17,17,.80); font-size: 16px; max-width: 62ch; }
-    .hero__cta { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 16px; }
+    .hero__cta { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+    .hero__cta .btn{
+      min-height:48px;
+      padding:11px 16px;
+      border-width:1px;
+    }
+    .hero-email{
+      display:inline-block;
+      margin-top:10px;
+      font-weight:700;
+      font-size:14px;
+      color:#222;
+      opacity:.85;
+      text-decoration:none;
+    }
+    .hero-email:hover{ text-decoration:underline; }
     .hero__note { margin: 14px 0 0; color: rgba(17,17,17,.60); font-size: 13px; }
     .vip-anchor{ margin-top:18px; }
     .vip-card{
@@ -176,18 +191,32 @@
       opacity:.85;
       margin:0 0 8px;
     }
-    .vip-line{
-      margin:0;
-      font-weight:650;
+    .vip-summary{
+      margin:10px 0 12px;
       font-size:14px;
-      line-height:1.25;
+      line-height:1.55;
+      color:#222;
+      max-width:42ch;
     }
-    .vip-line + .vip-line{ margin-top:6px; opacity:.9; }
+    .vip-chips{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      margin-bottom:12px;
+    }
+    .chip{
+      padding:7px 10px;
+      border-radius:999px;
+      font-size:12px;
+      font-weight:700;
+      background:rgba(255,255,255,.7);
+      border:1px solid rgba(0,0,0,.08);
+    }
     .vip-meta{
       display:flex;
       align-items:center;
-      justify-content:space-between;
-      margin-top:12px;
+      justify-content:flex-start;
+      margin-top:4px;
     }
     .vip-pill{
       display:inline-flex;
@@ -201,7 +230,37 @@
       border: 1px solid rgba(17,17,17,.10);
     }
     .vip-lock{ opacity:.7; }
-    .hero__visual {
+    .proof-zone{
+      padding:80px 0;
+      background:#fafafa;
+    }
+    .proof-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+      gap:18px;
+      margin-top:32px;
+    }
+    .proof-card{
+      padding:22px;
+      border-radius:16px;
+      background:#fff;
+      border:1px solid rgba(0,0,0,.06);
+    }
+    .proof-type{
+      font-weight:700;
+      margin:0 0 6px;
+    }
+    .proof-meta{
+      margin:0;
+      font-size:14px;
+      opacity:.75;
+    }
+    .proof-desc{
+      margin:10px 0 0;
+      font-size:14px;
+    }
+    .hero__visual,
+    .hero-visual {
       border-radius: var(--radius);
       border: 1px solid rgba(255,255,255,.25);
       background:
@@ -215,19 +274,32 @@
       position: relative;
       overflow: hidden;
     }
-    .hero__panel {
+    .hero-caption{
       position: absolute;
       left: 18px;
       right: 18px;
       bottom: 18px;
-      padding: 14px 14px;
-      border-radius: var(--radius-sm);
-      background: rgba(255,255,255,.58);
-      border: 1px solid rgba(255,255,255,.22);
-      backdrop-filter: blur(var(--glass-blur));
+      padding:14px 16px;
+      border-radius:16px;
+      background:rgba(255,255,255,.35);
+      border:1px solid rgba(0,0,0,.05);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      box-shadow: 0 4px 10px rgba(0,0,0,.04);
     }
-    .hero__panel strong { display: block; font-size: 14px; margin-bottom: 4px; }
-    .hero__panel span { color: rgba(17,17,17,.68); font-size: 13px; }
+    .hero-caption-title{
+      margin:0;
+      font-weight:800;
+      font-size:14px;
+      letter-spacing:-0.01em;
+      color:#1b1b1b;
+    }
+    .hero-caption-sub{
+      margin:6px 0 0;
+      font-weight:600;
+      font-size:12.5px;
+      color:rgba(0,0,0,.70);
+    }
 
     .trust { padding: 26px 0 0; }
     .trust__badges {
@@ -270,6 +342,31 @@
     .card__text { margin: 0; color: rgba(17,17,17,.70); font-size: 14px; }
 
     .pool__inner { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .info-grid{ display:grid; grid-template-columns:1fr 1fr; gap:22px; }
+    .info-card{
+      padding:26px;
+      border-radius:18px;
+      background:rgba(255,255,255,.65);
+      border:1px solid rgba(0,0,0,.06);
+      box-shadow: 0 10px 24px rgba(17,17,17,.06);
+    }
+    .info-card h3{
+      margin:0 0 12px;
+      font-size:18px;
+      line-height:1.25;
+    }
+    .info-card p{
+      margin:0 0 10px;
+      font-size:15px;
+      line-height:1.7;
+      color:#222;
+    }
+    .info-card .pool__hint{
+      margin-top:6px;
+      margin-bottom:0;
+      font-size:13px;
+      line-height:1.4;
+    }
     .pool__hint {
       margin: 0;
       color: rgba(17,17,17,.65);
@@ -350,6 +447,139 @@
 
     .map { width: 100%; height: 340px; border-radius: var(--radius); border: 1px solid rgba(17,17,17,.08); overflow: hidden; background: rgba(255,255,255,.45); }
     .map iframe { width: 100%; height: 100%; border: 0; }
+    .scan-trigger{
+      text-align:center;
+      padding:70px 20px;
+      background:#f7f7f7;
+      border-radius: var(--radius);
+      border: 1px solid rgba(17,17,17,.08);
+    }
+    .scan-trigger h3{
+      margin:0;
+      font-size:22px;
+      line-height:1.25;
+      letter-spacing:-0.01em;
+    }
+    .scan-urgency{
+      margin-top:10px;
+      margin-bottom:0;
+      font-weight:600;
+    }
+    .scan-trust{
+      margin:18px 0;
+      display:flex;
+      justify-content:center;
+      gap:16px;
+      flex-wrap:wrap;
+      color: rgba(17,17,17,.82);
+      font-size:14px;
+    }
+    .scan-qr{
+      width:min(320px, 100%);
+      margin:0 auto;
+      border-radius:16px;
+      border:1px solid rgba(17,17,17,.08);
+      background:#fff;
+      overflow:hidden;
+    }
+    .scan-qr img{
+      width:100%;
+      height:auto;
+      display:block;
+      background:#fff;
+    }
+    .scan-action{
+      margin-top:14px;
+      margin-bottom:0;
+      font-weight:700;
+    }
+    .final-nudge{ padding:60px 0; }
+    .nudge-card{
+      padding:26px 26px 22px;
+      border-radius:18px;
+      background:rgba(255,255,255,.70);
+      border:1px solid rgba(0,0,0,.06);
+    }
+    .nudge-title{
+      margin:0 0 14px;
+      font-size:18px;
+      line-height:1.25;
+      letter-spacing:-0.02em;
+    }
+    .nudge-list{
+      margin:0;
+      padding-left:18px;
+      line-height:1.9;
+      font-weight:600;
+    }
+    .nudge-sub{
+      margin:14px 0 0;
+      font-size:13.5px;
+      color:rgba(0,0,0,.68);
+    }
+    .copy-box{
+      border-radius:16px;
+      border:1px solid rgba(0,0,0,.06);
+      background:rgba(255,255,255,.78);
+      padding:14px;
+      margin-top:18px;
+    }
+    .copy-head{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:10px;
+      margin-bottom:10px;
+    }
+    .copy-title{
+      margin:0;
+      font-size:13px;
+      font-weight:800;
+      color:rgba(0,0,0,.78);
+    }
+    .copy-btn{
+      border:1px solid rgba(0,0,0,.10);
+      background:#fff;
+      border-radius:999px;
+      padding:8px 12px;
+      font-weight:800;
+      font-size:12.5px;
+      cursor:pointer;
+    }
+    .copy-text{
+      width:100%;
+      resize:none;
+      border-radius:12px;
+      border:1px solid rgba(0,0,0,.08);
+      padding:12px;
+      font-size:13.5px;
+      line-height:1.6;
+      background:#fff;
+    }
+    .copy-hint{
+      margin:10px 0 0;
+      font-size:12.5px;
+      color:rgba(0,0,0,.60);
+    }
+    .toast{
+      position:fixed;
+      left:50%;
+      bottom:calc(18px + env(safe-area-inset-bottom));
+      transform:translateX(-50%);
+      padding:10px 14px;
+      border-radius:999px;
+      background:rgba(0,0,0,.86);
+      color:#fff;
+      font-weight:800;
+      font-size:13px;
+      opacity:0;
+      pointer-events:none;
+      transition:opacity .18s ease, transform .18s ease;
+    }
+    .toast.show{
+      opacity:1;
+      transform:translateX(-50%) translateY(-6px);
+    }
 
     .site-footer { padding: 40px 0; border-top: 1px solid rgba(17,17,17,.08); color: rgba(17,17,17,.78); }
     .footer__brand { font-weight: 900; margin: 0 0 6px; }
@@ -445,7 +675,11 @@
       border-radius: 16px;
       background: #fff;
       margin-bottom: 20px;
+      image-rendering: auto;
+      transform: none;
+      filter: none;
     }
+    .qr-modal .modal__qr img { clip-path: inset(0 1.6% 0 0); }
     .modal__tip {
       margin-top: 8px;
       margin-bottom: 24px;
@@ -468,7 +702,14 @@
 
       .hero__title{ font-size: clamp(28px, 8.2vw, 42px); line-height: 1.16; }
       .vip-card{ padding:14px 14px 12px; border-radius:16px; }
-      .vip-line{ font-size:13px; }
+      .vip-summary{ font-size:13px; }
+      .chip{ font-size:11.5px; padding:6px 9px; }
+      .hero__cta .btn{ min-height:44px; padding:10px 14px; }
+      .hero-email{ font-size:13px; }
+      .info-grid{ grid-template-columns:1fr; gap:14px; }
+      .info-card{ padding:18px; border-radius:16px; }
+      .info-card h3{ font-size:16px; }
+      .info-card p{ font-size:14px; }
       .site-header .container{
         padding-left: max(22px, env(safe-area-inset-left));
         padding-right: max(16px, env(safe-area-inset-right));
@@ -487,6 +728,20 @@
       .float{
         display:none;
       }
+      .hero-caption{
+        left:12px;
+        right:12px;
+        bottom:12px;
+        padding:12px 14px;
+        border-radius:14px;
+      }
+      .hero-caption-title{ font-size:13.5px; }
+      .hero-caption-sub{ font-size:12px; }
+      .final-nudge{ padding:44px 0; }
+      .nudge-card{ padding:18px; border-radius:16px; }
+      .nudge-title{ font-size:16px; }
+      .nudge-sub{ font-size:13px; }
+      .copy-text{ font-size:13px; }
       body{
         padding-bottom: calc(96px + var(--sticky-h) + env(safe-area-inset-bottom));
       }
@@ -540,29 +795,59 @@
           <div class="vip-anchor" role="note" aria-label="VIP concierge quick trust">
             <div class="vip-card">
               <p class="vip-kicker" data-i18n="vip.kicker">VIP Concierge</p>
-              <p class="vip-line" data-i18n="vip.l1">Medical Visit Interpretation</p>
-              <p class="vip-line" data-i18n="vip.l2">Confidential Handling</p>
-              <p class="vip-line" data-i18n="vip.l3">WeChat First Response</p>
+              <p class="vip-summary" data-i18n="vip.summary">의료 동행 통역을 상황에 맞게 빠르게 매칭합니다.</p>
+              <div class="vip-chips">
+                <span class="chip" data-i18n="vip.chip1">의료 동행</span>
+                <span class="chip" data-i18n="vip.chip2">비밀유지</span>
+                <span class="chip" data-i18n="vip.chip3">위챗 우선</span>
+              </div>
               <div class="vip-meta">
                 <span class="vip-pill" id="vipAvailability" aria-live="polite">● Available</span>
-                <span class="vip-lock">🛡</span>
               </div>
             </div>
           </div>
 
           <div class="hero__cta">
-            <a class="btn btn--ghost" href="#contact" data-i18n="hero.ctaSecondary">紧急口译咨询</a>
             <button class="btn btn--accent" type="button" id="openWechat" data-i18n="hero.ctaWechat">添加微信</button>
-            <a class="btn btn--ghost" href="mailto:contact@jstarstudio.com">contact@jstarstudio.com</a>
+            <a class="btn btn--ghost" href="#contact" data-i18n="hero.ctaSecondary">紧急口译咨询</a>
           </div>
+          <a class="hero-email" href="mailto:contact@jstarstudio.com">contact@jstarstudio.com</a>
 
           <p class="hero__note" data-i18n="hero.note">医疗口译团队 · 快速匹配 · 严格保密 · 首尔/江南现场支持</p>
         </div>
 
-        <div class="hero__visual" aria-hidden="true">
-          <div class="hero__panel">
-            <strong>Gangnam Medical Support</strong>
-            <span>On-demand matching · Confidential · On-site</span>
+        <div class="hero__visual hero-visual" aria-hidden="true">
+          <div class="hero-caption" aria-label="Gangnam support caption">
+            <p class="hero-caption-title" data-i18n="hero.captionTitle">강남 메디컬 지원</p>
+            <p class="hero-caption-sub" data-i18n="hero.captionSub">상황 맞춤 매칭 · 비밀유지 · 현장 지원</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="proof-zone" id="proof">
+      <div class="container">
+        <h2 class="section__title">
+          📑 <span data-i18n="proof.title">Medical Interpretation Cases</span>
+        </h2>
+
+        <div class="proof-grid">
+          <div class="proof-card">
+            <p class="proof-type" data-i18n="proof.card1Type">Dermatology Consultation</p>
+            <p class="proof-meta" data-i18n="proof.card1Meta">Gangnam · Private Clinic Visit</p>
+            <p class="proof-desc" data-i18n="proof.card1Desc">Chinese Patient Support</p>
+          </div>
+
+          <div class="proof-card">
+            <p class="proof-type" data-i18n="proof.card2Type">Plastic Surgery Consultation</p>
+            <p class="proof-meta" data-i18n="proof.card2Meta">Pre-operative Interpretation</p>
+            <p class="proof-desc" data-i18n="proof.card2Desc">Confidential Handling</p>
+          </div>
+
+          <div class="proof-card">
+            <p class="proof-type" data-i18n="proof.card3Type">VIP Medical Visit</p>
+            <p class="proof-meta" data-i18n="proof.card3Meta">Airport → Clinic → Follow-up</p>
+            <p class="proof-desc" data-i18n="proof.card3Desc">On-site Interpretation</p>
           </div>
         </div>
       </div>
@@ -598,22 +883,22 @@
     <section id="pool" class="section pool" aria-labelledby="pool-title">
       <div class="container">
         <h2 id="pool-title" class="section__title" data-i18n="pool.title">多名医疗口译员，按场景快速匹配</h2>
-        <div class="pool__inner">
-          <div class="card">
-            <p style="margin:0 0 10px;color:rgba(17,17,17,.78)" data-i18n="pool.p1">
+        <div class="pool__inner info-grid">
+          <div class="info-card">
+            <p data-i18n="pool.p1">
               我们拥有多名具备医疗现场经验的中文口译员，可根据科室、难度、时间与地点快速匹配。
             </p>
-            <p style="margin:0;color:rgba(17,17,17,.70)" data-i18n="pool.p2">
+            <p data-i18n="pool.p2">
               对诊疗信息与个人隐私严格保密，并遵循现场沟通礼仪与流程。
             </p>
             <p class="pool__hint">🔒 <span data-i18n="pool.hint">江南区域支持经验丰富，可配合诊所与医疗服务协调的运营节奏</span></p>
           </div>
-          <div class="card card--glass">
-            <h3 style="margin:0 0 8px;font-size:16px;font-weight:900" data-i18n="b2b.title">诊所与医疗机构专属口译支持</h3>
-            <p style="margin:0 0 10px;color:rgba(17,17,17,.70);font-size:14px" data-i18n="b2b.p1">
+          <div class="info-card">
+            <h3 data-i18n="b2b.title">诊所与医疗机构专属口译支持</h3>
+            <p data-i18n="b2b.p1">
               针对江南地区皮肤科、整形外科及医疗服务协调机构需求，按科室、难度、时间与地点快速匹配医疗口译员。
             </p>
-            <p style="margin:0;color:rgba(17,17,17,.70);font-size:14px" data-i18n="b2b.p2">
+            <p data-i18n="b2b.p2">
               支持多日程并行，严格遵守保密原则，确保诊疗与个人信息安全。
             </p>
           </div>
@@ -621,9 +906,9 @@
       </div>
     </section>
 
-    <section id="proof" class="section proof" aria-labelledby="proof-title">
+    <section id="proof-metrics" class="section proof" aria-labelledby="proof-metrics-title">
       <div class="container">
-        <h2 id="proof-title" class="section__title" data-i18n="proof.title">可被验证的经验</h2>
+        <h2 id="proof-metrics-title" class="section__title" data-i18n="proof.metricsTitle">可被验证的经验</h2>
         <div class="grid grid--metrics" id="metricGrid"></div>
       </div>
     </section>
@@ -667,6 +952,35 @@
           <div class="cta__buttons">
             <button class="btn btn--primary" type="button" id="openWechat2" data-i18n="cta.primary">微信咨询</button>
             <a class="btn btn--ghost" href="#contact" data-i18n="cta.secondary">提交需求</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-nudge" id="finalNudge">
+      <div class="container">
+        <div class="nudge-card">
+          <h3 class="nudge-title" data-i18n="nudge.title">바로 문의해도 괜찮을까요?</h3>
+          <ul class="nudge-list">
+            <li data-i18n="nudge.li1">🛡 상담 내용은 비밀유지 원칙으로 관리합니다.</li>
+            <li data-i18n="nudge.li2">✅ 가능 여부를 먼저 확인한 뒤 진행해도 됩니다.</li>
+            <li data-i18n="nudge.li3">💬 위챗으로 “진료 과목/일정/장소”만 보내주세요.</li>
+          </ul>
+          <p class="nudge-sub" data-i18n="nudge.sub">부담 없이 상황만 공유해 주세요. 필요한 범위부터 안내드립니다.</p>
+
+          <div class="copy-box" aria-label="WeChat message template">
+            <div class="copy-head">
+              <p class="copy-title" data-i18n="copy.title">위챗 문의 문구</p>
+              <button class="copy-btn" type="button" id="copyWeChatTemplateBtn">
+                <span data-i18n="copy.btn">문구 복사</span> 📋
+              </button>
+            </div>
+            <textarea class="copy-text" id="weChatTemplateText" readonly rows="4" data-i18n-placeholder="copy.text" placeholder="(template)"></textarea>
+            <p class="copy-hint" data-i18n="copy.hint">위 문구를 복사해서 위챗에 붙여넣으면 됩니다.</p>
+          </div>
+
+          <div class="toast" id="copyToast" role="status" aria-live="polite" aria-hidden="true">
+            <span data-i18n="copy.toast">복사됨</span> ✅
           </div>
         </div>
       </div>
@@ -728,20 +1042,18 @@
         </div>
 
         <aside class="contact__map">
-          <div class="wechat-block">
-            <div class="wechat-block__top">
-              <div>
-                <h3 style="margin:0;font-size:16px;font-weight:900" data-i18n="contact.wechatBlockTitle">微信咨询</h3>
-                <p class="mini" data-i18n="contact.wechatHint">扫描二维码添加微信。</p>
-              </div>
-              <button class="btn btn--accent" type="button" id="openWechat4">QR</button>
+          <section class="scan-trigger" aria-label="WeChat scan trigger">
+            <h3 data-i18n="scan.title">Need Medical Interpretation Soon?</h3>
+            <p class="scan-urgency" data-i18n="scan.urgency">Interpreter availability changes daily.</p>
+            <div class="scan-trust">
+              <span>🛡 <span data-i18n="scan.secure">Confidential consultation</span></span>
+              <span>💬 <span data-i18n="scan.fast">WeChat priority response</span></span>
             </div>
-
-            <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:12px;">
-              <a class="btn btn--ghost" href="#" id="downloadQrInline" download="wechat-qr.png" data-i18n="contact.downloadQr">QR 이미지 다운로드</a>
-              <a class="btn btn--primary" href="mailto:contact@jstarstudio.com" data-i18n="contact.email">发送邮件</a>
+            <div class="scan-qr">
+              <img id="scanQrImage" alt="WeChat QR code" loading="lazy" />
             </div>
-          </div>
+            <p class="scan-action" data-i18n="scan.action">Scan → Add WeChat → Confirm availability</p>
+          </section>
 
           <div class="map" style="margin-top:14px" aria-label="Office location map">
             <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=강남%20메디컬%20투어센터&output=embed" title="Gangnam Medical Tour Center location"></iframe>
@@ -767,7 +1079,7 @@
     <a class="btn btn--ghost" href="#contact">✍️ <span data-i18n="cta.secondary">提交需求</span></a>
   </div>
 
-  <div class="modal" id="wechatModal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="WeChat QR">
+  <div class="modal qr-modal" id="wechatModal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="WeChat QR">
     <div class="modal__panel">
       <div class="modal__head">
         <p class="modal__title">WeChat QR</p>
@@ -804,13 +1116,25 @@
       kicker: "VIP礼宾服务",
       l1: "医疗就诊口译支持",
       l2: "严格保密处理",
-      l3: "优先微信响应"
+      l3: "优先微信响应",
+      summary: "根据就诊场景快速匹配医疗口译员。",
+      chip1: "医疗陪同",
+      chip2: "严格保密",
+      chip3: "微信优先",
+      available: "可咨询",
+      waiting: "待确认"
     };
     I18N["ko"].vip = {
-      kicker: "VIP Concierge",
-      l1: "Medical Visit Interpretation",
-      l2: "Confidential Handling",
-      l3: "WeChat First Response"
+      kicker: "VIP 컨시어지",
+      l1: "의료 동행 통역",
+      l2: "비밀유지 원칙",
+      l3: "위챗 우선 응답",
+      summary: "의료 동행 통역을 상황에 맞게 빠르게 매칭합니다.",
+      chip1: "의료 동행",
+      chip2: "비밀유지",
+      chip3: "위챗 우선",
+      available: "상담 가능",
+      waiting: "대기 중"
     };
     I18N["ko"].sticky = {
       wechat: "위챗 상담",
@@ -820,6 +1144,78 @@
       wechat: "微信咨询",
       urgent: "紧急咨询"
     };
+    I18N["ko"].scan = {
+      title: "의료 통역이 필요하신가요?",
+      urgency: "통역사 일정은 매일 변동됩니다.",
+      secure: "비밀유지 상담",
+      fast: "위챗 우선 응답",
+      action: "QR 스캔 → 위챗 추가 → 일정 확인"
+    };
+    I18N["zh-CN"].scan = {
+      title: "需要医疗口译支持吗？",
+      urgency: "口译员档期每日变动",
+      secure: "咨询内容严格保密",
+      fast: "微信优先回复",
+      action: "扫码添加微信 → 确认档期"
+    };
+    I18N["ko"].hero.panelTitle = "강남 메디컬 지원";
+    I18N["ko"].hero.panelMeta = "상황 맞춤 매칭 · 비밀유지 · 현장 지원";
+    I18N["zh-CN"].hero.panelTitle = "江南医疗支持";
+    I18N["zh-CN"].hero.panelMeta = "按需匹配 · 严格保密 · 现场支持";
+    I18N["ko"].hero.captionTitle = "강남 메디컬 지원";
+    I18N["ko"].hero.captionSub = "상황 맞춤 매칭 · 비밀유지 · 현장 지원";
+    I18N["zh-CN"].hero.captionTitle = "江南医疗支持";
+    I18N["zh-CN"].hero.captionSub = "按需匹配 · 严格保密 · 现场支持";
+    I18N["ko"].nudge = {
+      title: "바로 문의해도 괜찮을까요?",
+      li1: "🛡 상담 내용은 비밀유지 원칙으로 관리합니다.",
+      li2: "✅ 가능 여부를 먼저 확인한 뒤 진행해도 됩니다.",
+      li3: "💬 위챗으로 “진료 과목/일정/장소”만 보내주세요.",
+      sub: "부담 없이 상황만 공유해 주세요. 필요한 범위부터 안내드립니다."
+    };
+    I18N["zh-CN"].nudge = {
+      title: "现在咨询可以吗？",
+      li1: "🛡 咨询内容严格保密。",
+      li2: "✅ 可先确认是否可安排，再决定是否继续。",
+      li3: "💬 只需在微信发送“科室/时间/地点”。",
+      sub: "先把情况发给我们即可，我们会从必要范围开始说明。"
+    };
+    I18N["ko"].copy = {
+      title: "위챗 문의 문구",
+      btn: "문구 복사",
+      text: "진료 과목: \n일정(날짜/시간): \n장소(지역/병원명은 선택): \n필요 범위(동행/상담/수술 전후): \n기타(특이사항):",
+      hint: "위 문구를 복사해서 위챗에 붙여넣으면 됩니다.",
+      toast: "복사됨"
+    };
+    I18N["zh-CN"].copy = {
+      title: "微信咨询模板",
+      btn: "复制模板",
+      text: "科室：\n时间（日期/时段）：\n地点（区域/医院名可选）：\n需要范围（陪同/面诊/术前术后）：\n补充信息：",
+      hint: "复制后直接粘贴到微信即可。",
+      toast: "已复制"
+    };
+    I18N["ko"].proof.title = "의료 통역 사례";
+    I18N["zh-CN"].proof.title = "医疗口译服务场景";
+    I18N["ko"].proof.metricsTitle = "검증된 경험";
+    I18N["zh-CN"].proof.metricsTitle = "可被验证的经验";
+    I18N["ko"].proof.card1Type = "피부과 상담 통역";
+    I18N["ko"].proof.card1Meta = "강남 · 프라이빗 클리닉";
+    I18N["ko"].proof.card1Desc = "중국 고객 동행 지원";
+    I18N["ko"].proof.card2Type = "성형 상담 통역";
+    I18N["ko"].proof.card2Meta = "수술 전 상담 동행";
+    I18N["ko"].proof.card2Desc = "비밀유지 원칙";
+    I18N["ko"].proof.card3Type = "VIP 의료 동행";
+    I18N["ko"].proof.card3Meta = "공항 → 클리닉 → 사후 케어";
+    I18N["ko"].proof.card3Desc = "현장 통역 지원";
+    I18N["zh-CN"].proof.card1Type = "皮肤科咨询";
+    I18N["zh-CN"].proof.card1Meta = "江南 · 私立诊所就诊";
+    I18N["zh-CN"].proof.card1Desc = "中文患者沟通支持";
+    I18N["zh-CN"].proof.card2Type = "整形外科咨询";
+    I18N["zh-CN"].proof.card2Meta = "术前沟通口译";
+    I18N["zh-CN"].proof.card2Desc = "保密处理";
+    I18N["zh-CN"].proof.card3Type = "VIP医疗行程";
+    I18N["zh-CN"].proof.card3Meta = "机场 → 诊所 → 复诊";
+    I18N["zh-CN"].proof.card3Desc = "现场陪同口译";
 
     const getByPath = (obj, path) => path.split('.').reduce((o,k) => (o ? o[k] : undefined), obj);
 
@@ -848,6 +1244,11 @@
         const key = el.getAttribute('data-i18n');
         const val = getByPath(I18N[lang], key);
         if (typeof val === 'string') el.textContent = val;
+      });
+      document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+        const key = el.getAttribute('data-i18n-placeholder');
+        const val = getByPath(I18N[lang], key);
+        if (typeof val === 'string') el.setAttribute('placeholder', val);
       });
 
       const usecases = I18N[lang].usecases.items;
@@ -900,6 +1301,51 @@
           <p class="faq__a">${item.a}</p>
         </details>
       `).join('');
+
+      const templateEl = document.getElementById('weChatTemplateText');
+      const templateText = getByPath(I18N[lang], 'copy.text');
+      if (templateEl && typeof templateText === 'string') {
+        templateEl.value = templateText;
+      }
+
+      updateVipAvailability(lang);
+    }
+
+    async function copyTextCompat(text) {
+      if (navigator.clipboard && window.isSecureContext) {
+        try {
+          await navigator.clipboard.writeText(text);
+          return true;
+        } catch (e) {}
+      }
+
+      try {
+        const ta = document.getElementById('weChatTemplateText');
+        if (ta) {
+          ta.removeAttribute('readonly');
+          ta.focus();
+          ta.select();
+          ta.setSelectionRange(0, ta.value.length);
+          const ok = document.execCommand('copy');
+          ta.setAttribute('readonly', 'readonly');
+          window.getSelection()?.removeAllRanges?.();
+          return ok;
+        }
+      } catch (e) {}
+
+      return false;
+    }
+
+    function showToast() {
+      const t = document.getElementById('copyToast');
+      if (!t) return;
+      t.classList.add('show');
+      t.setAttribute('aria-hidden', 'false');
+      clearTimeout(window.__toastTimer);
+      window.__toastTimer = setTimeout(() => {
+        t.classList.remove('show');
+        t.setAttribute('aria-hidden', 'true');
+      }, 1200);
     }
 
     // Modal
@@ -917,7 +1363,6 @@
       document.getElementById('openWechat'),
       document.getElementById('openWechat2'),
       document.getElementById('openWechat3'),
-      document.getElementById('openWechat4'),
       document.getElementById('openWechatFloat')
     ].filter(Boolean);
     openers.forEach(btn => btn.addEventListener('click', openModal));
@@ -927,6 +1372,18 @@
       if (e.key === 'Escape' && modal.getAttribute('aria-hidden') === 'false') closeModal();
     });
     document.addEventListener('click', (e) => {
+      const copyBtn = e.target.closest('#copyWeChatTemplateBtn');
+      if (copyBtn) {
+        e.preventDefault();
+        const ta = document.getElementById('weChatTemplateText');
+        const text = ta ? ta.value : '';
+        if (!text) return;
+        copyTextCompat(text).then((ok) => {
+          if (ok) showToast();
+        });
+        return;
+      }
+
       const btn = e.target.closest('[data-action="wechat"]');
       if (!btn) return;
       e.preventDefault();
@@ -953,7 +1410,7 @@
 
     // QR download links
     function setQrDownloadLinks(src) {
-      ['downloadQrInline', 'downloadQrModal'].forEach((id) => {
+      ['downloadQrModal'].forEach((id) => {
         const link = document.getElementById(id);
         if (link) link.setAttribute('href', src);
       });
@@ -964,16 +1421,22 @@
       if (!qrImage) return;
       const src = qrImage.getAttribute('src');
       if (!src) return;
+      const scanQr = document.getElementById('scanQrImage');
+      if (scanQr) scanQr.setAttribute('src', src);
       setQrDownloadLinks(src);
     }
     setupQrDownloadLinks();
 
-    function updateVipAvailability() {
+    function updateVipAvailability(lang) {
       const el = document.getElementById('vipAvailability');
       if (!el) return;
+      const currentLang = lang || document.getElementById('langSelect')?.value || localStorage.getItem('lang') || 'zh-CN';
       const hour = new Date().getHours();
       const isAvailable = hour >= 10 && hour < 19;
-      el.textContent = isAvailable ? '● Available' : '● Waiting';
+      const vipText = I18N[currentLang]?.vip || {};
+      const available = vipText.available || 'Available';
+      const waiting = vipText.waiting || 'Waiting';
+      el.textContent = isAvailable ? `● ${available}` : `● ${waiting}`;
     }
     updateVipAvailability();
 
