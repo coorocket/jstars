@@ -163,6 +163,87 @@
       mobile: { email: "이메일", wechat: "위챗 상담" },
       modal: { kicker: "WECHAT CONSULTATION", title: "위챗 QR로 추가", lead: "진료과, 날짜와 장소를 보내주시면 일정과 서비스 범위를 확인합니다.", tip: "먼저 문의하고 나중에 결정해도 됩니다", download: "QR 이미지 저장" },
       toast: { copied: "문의 양식을 복사했습니다" }
+    },
+    en: {
+      meta: {
+        title: "Jstar Studio | Chinese Medical Interpretation in Seoul & Gangnam",
+        description: "Chinese medical escort interpretation, pre- and post-procedure communication, document translation, and multi-appointment coordination for international patients and medical providers in Seoul and Gangnam.",
+        socialTitle: "Clear communication. Confident care.",
+        socialDescription: "Chinese medical interpretation in Seoul and Gangnam, with fast matching by specialty and schedule and strict confidentiality."
+      },
+      a11y: { skip: "Skip to main content", openMenu: "Open menu", closeMenu: "Close menu", closeModal: "Close WeChat QR code" },
+      nav: { services: "Services", approach: "Our approach", process: "Process", faq: "FAQ", contact: "WeChat" },
+      hero: {
+        eyebrow: "SEOUL · GANGNAM MEDICAL SUPPORT",
+        title: "Clear communication.<br><em>Confident care.</em>",
+        lead: "From the first consultation to post-procedure follow-ups, we accurately convey medical explanations and help organize the questions that matter.",
+        primary: "Check interpreter availability",
+        secondary: "Explore our services",
+        point1: "Chinese · Korean on-site support",
+        point2: "Strict confidentiality",
+        imageAlt: "A Chinese medical interpreter supporting communication between a doctor and patient",
+        availability: "Availability inquiries open",
+        imageKicker: "ON-SITE SUPPORT",
+        imageTitle: "On-site interpretation without missing vital details"
+      },
+      trust: { years: "years’ combined experience", sessions: "service sessions", area: "on-site support in Seoul · Gangnam", private: "confidential process" },
+      services: {
+        kicker: "WHAT WE DO",
+        title: "More than translating words—<br>we understand the medical setting.",
+        lead: "We match the right interpreter to the specialty, communication needs, time, and location so patients, clinicians, and coordinators stay aligned.",
+        item1: { title: "Medical escort interpretation", body: "On-site support for appointments, examinations, treatment explanations, pre-procedure consultations, and follow-ups.", tag1: "Key information confirmation", tag2: "Question and communication support" },
+        item2: { title: "Dermatology · Plastic surgery", body: "Clear communication of treatment differences, risks, expectations, contraindications, and aftercare.", tag1: "Accurate medical terminology", tag2: "Treatment and cost communication" },
+        item3: { title: "Clinic · Agency coordination", body: "Support for multiple locations, clients, and time slots to reduce scheduling and communication gaps.", tag1: "Fast needs-based matching", tag2: "One communication channel" },
+        item4: { title: "Medical document translation", body: "Translation of medical certificates, test results, consent forms, aftercare guides, and provider materials.", tag1: "Chinese–Korean translation", tag2: "Terminology and format review" }
+      },
+      approach: {
+        kicker: "OUR APPROACH",
+        title: "Good medical interpretation<br>gives everyone confidence.",
+        lead: "We first understand the purpose of the visit and each person’s role, then communicate accurately, confirm key points, and reduce misunderstandings.",
+        point1: { title: "Understand the context", body: "We consider the specialty, treatment, and patient concerns to understand the real intent." },
+        point2: { title: "Communicate accurately", body: "We neither exaggerate nor omit, preserving the professional boundaries of the clinician’s explanation." },
+        point3: { title: "Confirm both ways", body: "We organize key questions and help everyone confirm a shared understanding." },
+        quote: "Words can be translated, but a medical decision must be truly understood.",
+        flow: { patient: "Patient needs", interpreter: "Professional interpretation", clinic: "Medical guidance" }
+      },
+      audience: {
+        kicker: "WHO WE SUPPORT",
+        title: "Two types of needs, one clear standard",
+        patient: { label: "FOR PATIENTS", title: "International patients in Korea", body: "Navigate consultations, examinations, and follow-ups with confidence, even when Korea’s medical process is unfamiliar.", li1: "Initial and treatment consultations", li2: "Pre- and post-procedure communication", li3: "Examination and aftercare guidance", li4: "VIP medical itinerary support" },
+        business: { label: "FOR CLINICS & AGENCIES", title: "Clinics and medical service providers", body: "Coordinate interpreters by patient group, specialty, and schedule for a consistent communication experience.", li1: "Multi-location · multi-day scheduling", li2: "On-site support for Chinese clients", li3: "Standardized materials and terminology", li4: "Long-term coordination partner" }
+      },
+      process: {
+        kicker: "HOW IT WORKS", title: "From inquiry to on-site support in four steps", lead: "Start with the specialty, time, and location. We review the request before matching, so there is no need to decide immediately.",
+        step1: { title: "Send your request", body: "Specialty · date · location · support needed" },
+        step2: { title: "Confirm and quote", body: "Review complexity, duration, and itinerary details" },
+        step3: { title: "Match an interpreter", body: "Assign by experience, specialty, and availability" },
+        step4: { title: "On-site and follow-up", body: "Interpret on site and summarize next steps when needed" },
+        privacy: { title: "Privacy starts with your first inquiry", body: "Personal details, medical information, and on-site conversations are handled confidentially and used only to arrange the requested service." }
+      },
+      cases: {
+        kicker: "SELECTED SCENARIOS", title: "Common service scenarios", lead: "These anonymized scenarios can help you identify the type of support you may need.",
+        case1: { title: "Dermatology consultation in Gangnam", body: "Compare treatment options, precautions, and recovery times, while confirming the patient’s key questions on site.", result: "Focus: clear decision criteria" },
+        case2: { title: "Plastic surgery consultation and follow-up", body: "Communicate risks, expectations, and aftercare accurately and reconfirm that everyone shares the same understanding.", result: "Focus: no missing risk information" },
+        case3: { title: "Multiple patients and time slots", body: "Coordinate multiple interpreters for clinics or agencies through one channel for schedule changes and on-site communication.", result: "Focus: fewer scheduling gaps" }
+      },
+      faq: {
+        kicker: "FAQ", title: "What you may want to know<br>before contacting us", lead: "If your question is not covered, send us the specialty, date, and location. We will review and reply.", action: "Contact us",
+        q1: "What stages can medical escort interpretation cover?", a1: "Support can include initial appointments, examination explanations, treatment or surgery consultations, pre-procedure communication, follow-ups, and aftercare guidance, depending on your needs.",
+        q2: "Can you arrange same-day or urgent support?", a2: "Send the time, location, and specialty first. We will prioritize checking available interpreters, although same-day arrangements depend on current availability.",
+        q3: "How is the fee calculated?", a3: "Quotes are based on duration, location, specialty complexity, multi-day scheduling, and any advance document preparation. Service begins only after confirmation.",
+        q4: "How do you protect medical information?", a4: "Interpreters follow strict confidentiality principles. Personal and medical information is used only for service coordination and on-site communication.",
+        q5: "Can clinics work with you long term?", a5: "Yes. We can build a long-term workflow by location, specialty, patient group, and time slot, or begin with a single assignment.",
+        q6: "Do you translate medical documents?", a6: "Yes. We translate medical certificates, test results, consent forms, and aftercare guides between Chinese and Korean. Send the document type and page count to confirm the scope."
+      },
+      contact: {
+        kicker: "START A CONVERSATION", title: "Check availability first,<br>then decide your next step.", lead: "Send the specialty, date, and location on WeChat, and we will confirm the available service options.",
+        templateLabel: "Copy this inquiry template", template: "Specialty:<br>Date / time:<br>Location:<br>Support needed:", templateText: "Specialty:\nDate / time:\nLocation:\nSupport needed:",
+        copy: "Copy", wechat: "Open WeChat QR", email: "Send email", qrAlt: "Jstar Studio WeChat QR code", qrTitle: "Scan to contact us on WeChat", qrBody: "Send the specialty, time, and location after adding us"
+      },
+      footer: { summary: "Chinese medical interpretation and professional translation in Seoul · Gangnam" },
+      mobile: { email: "Email", wechat: "WeChat" },
+      modal: { kicker: "WECHAT CONSULTATION", title: "Add us on WeChat", lead: "Send the specialty, date, and location, and we will confirm availability and the service scope.", tip: "Ask first—there is no need to decide immediately", download: "Save QR code" },
+      toast: { copied: "Inquiry template copied" }
     }
   };
 
