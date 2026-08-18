@@ -23,7 +23,10 @@
   <meta name="twitter:image" content="https://coorocket.github.io/jstars/assets/og.png" />
 
   <link rel="preload" href="assets/translation.png" as="image" fetchpriority="high" />
-  <link rel="stylesheet" href="styles.css?v=20260818-2" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&amp;display=swap" />
+  <link rel="stylesheet" href="styles.css?v=20260818-5" />
 
   <script type="application/ld+json">
     {
@@ -83,7 +86,7 @@
       <div class="container hero-grid">
         <div class="hero-copy reveal">
           <p class="eyebrow"><span></span><span data-i18n="hero.eyebrow">SEOUL · GANGNAM MEDICAL SUPPORT</span></p>
-          <h1 id="hero-title" data-i18n-html="hero.title">让每一次医疗沟通，<br><em>都清楚而安心。</em></h1>
+          <h1 id="hero-title" data-i18n-html="hero.title"><span class="hero-title-line">让每一次医疗沟通，</span><em class="hero-title-line">都清楚而安心。</em></h1>
           <p class="hero-lead" data-i18n="hero.lead">从初诊咨询到术后复诊，准确传达医生说明，也替您整理真正需要确认的问题。</p>
           <div class="hero-actions">
             <button class="button button--primary" type="button" data-open-wechat><span data-i18n="hero.primary">确认口译档期</span><span aria-hidden="true">↗</span></button>
@@ -171,7 +174,7 @@
 
     <section class="section audience" aria-labelledby="audience-title">
       <div class="container">
-        <div class="section-heading section-heading--compact reveal"><div><p class="section-kicker" data-i18n="audience.kicker">WHO WE SUPPORT</p><h2 id="audience-title" data-i18n="audience.title">两种需求，一套清晰标准</h2></div></div>
+        <div class="section-heading section-heading--compact reveal"><div><p class="section-kicker" data-i18n="audience.kicker">WHO WE SUPPORT</p><h2 id="audience-title" data-i18n-html="audience.title"><span class="audience-title-line">两种需求，</span><span class="audience-title-line">一套清晰标准</span></h2></div></div>
         <div class="audience-grid">
           <article class="audience-card audience-card--patient reveal">
             <p class="audience-label" data-i18n="audience.patient.label">FOR PATIENTS</p><h3 data-i18n="audience.patient.title">来韩就医客户</h3>
@@ -240,7 +243,7 @@
       <div class="container contact-card reveal">
         <div class="contact-copy">
           <p class="section-kicker section-kicker--mint" data-i18n="contact.kicker">START A CONVERSATION</p>
-          <h2 id="contact-title" data-i18n-html="contact.title">先确认档期，<br>再决定下一步。</h2>
+          <h2 id="contact-title" data-i18n-html="contact.title"><span class="contact-title-line">先确认档期，</span><span class="contact-title-line">再决定下一步。</span></h2>
           <p data-i18n="contact.lead">通过微信发送“科室 / 日期 / 地点”，我们会根据情况确认可安排范围。</p>
           <div class="message-template" aria-label="Inquiry template">
             <div><small data-i18n="contact.templateLabel">可直接复制这段咨询模板</small><p id="inquiryTemplate" data-i18n-html="contact.template">科室：<br>日期 / 时间：<br>地点：<br>需要范围：</p></div>
@@ -282,6 +285,6 @@
   </div>
 
   <div class="toast" id="toast" role="status" aria-live="polite" data-i18n="toast.copied">咨询模板已复制</div>
-  <script src="app.js?v=20260818-3" defer></script>
+  <script src="app.js?v=20260818-4" defer></script>
 </body>
 </html>

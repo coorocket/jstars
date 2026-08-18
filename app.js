@@ -13,7 +13,7 @@
       nav: { services: "服务", approach: "专业方式", process: "流程", faq: "问答", contact: "微信咨询" },
       hero: {
         eyebrow: "SEOUL · GANGNAM MEDICAL SUPPORT",
-        title: "让每一次医疗沟通，<br><em>都清楚而安心。</em>",
+        title: "<span class=\"hero-title-line\">让每一次医疗沟通，</span><em class=\"hero-title-line\">都清楚而安心。</em>",
         lead: "从初诊咨询到术后复诊，准确传达医生说明，也替您整理真正需要确认的问题。",
         primary: "确认口译档期",
         secondary: "查看服务范围",
@@ -46,7 +46,7 @@
       },
       audience: {
         kicker: "WHO WE SUPPORT",
-        title: "两种需求，一套清晰标准",
+        title: "<span class=\"audience-title-line\">两种需求，</span><span class=\"audience-title-line\">一套清晰标准</span>",
         patient: { label: "FOR PATIENTS", title: "来韩就医客户", body: "不熟悉韩国医疗流程，也能有条理地完成咨询、检查与复诊。", li1: "初诊与项目咨询", li2: "手术前后沟通", li3: "检查与护理说明", li4: "VIP医疗行程陪同" },
         business: { label: "FOR CLINICS & AGENCIES", title: "诊所与医疗服务机构", body: "按客群、科室与排班需求协调合适口译员，稳定客户沟通体验。", li1: "多门店 · 多日程排班", li2: "中国客户现场接待", li3: "资料与术语标准化", li4: "长期协作窗口" }
       },
@@ -74,7 +74,7 @@
         q6: "医疗文件也可以翻译吗？", a6: "支持诊断书、检查报告、同意书、术后指导等中韩翻译。请先发送文件类型与页数确认范围。"
       },
       contact: {
-        kicker: "START A CONVERSATION", title: "先确认档期，<br>再决定下一步。", lead: "通过微信发送“科室 / 日期 / 地点”，我们会根据情况确认可安排范围。",
+        kicker: "START A CONVERSATION", title: "<span class=\"contact-title-line\">先确认档期，</span><span class=\"contact-title-line\">再决定下一步。</span>", lead: "通过微信发送“科室 / 日期 / 地点”，我们会根据情况确认可安排范围。",
         templateLabel: "可直接复制这段咨询模板", template: "科室：<br>日期 / 时间：<br>地点：<br>需要范围：", templateText: "科室：\n日期 / 时间：\n地点：\n需要范围：",
         copy: "复制", wechat: "打开微信二维码", email: "发送邮件", qrAlt: "Jstar Studio 微信二维码", qrTitle: "微信扫码咨询", qrBody: "添加后发送科室、时间与地点"
       },
@@ -94,7 +94,7 @@
       nav: { services: "서비스", approach: "통역 원칙", process: "진행 절차", faq: "FAQ", contact: "위챗 상담" },
       hero: {
         eyebrow: "SEOUL · GANGNAM MEDICAL SUPPORT",
-        title: "의료 커뮤니케이션을<br><em>명확하고 안심되게.</em>",
+        title: "<span class=\"hero-title-line\">의료 커뮤니케이션을</span><em class=\"hero-title-line\">정확하고 안심되게.</em>",
         lead: "초진 상담부터 수술 후 재진까지, 의료진의 설명을 정확히 전달하고 꼭 확인해야 할 질문을 정리합니다.",
         primary: "통역 일정 확인",
         secondary: "서비스 범위 보기",
@@ -127,7 +127,7 @@
       },
       audience: {
         kicker: "WHO WE SUPPORT",
-        title: "두 가지 요구, 하나의 명확한 기준",
+        title: "<span class=\"audience-title-line\">두 가지 요구,</span><span class=\"audience-title-line\">하나의 명확한 기준</span>",
         patient: { label: "FOR PATIENTS", title: "한국 방문 의료 고객", body: "한국 의료 절차가 낯설어도 상담, 검사와 재진을 체계적으로 진행할 수 있습니다.", li1: "초진 및 시술 상담", li2: "수술 전후 커뮤니케이션", li3: "검사와 관리 안내", li4: "VIP 의료 일정 동행" },
         business: { label: "FOR CLINICS & AGENCIES", title: "병원 및 의료 서비스 기관", body: "고객군, 진료과와 일정에 맞는 통역사를 조율해 일관된 고객 소통 경험을 만듭니다.", li1: "다지점 · 다중 일정 배치", li2: "중국 고객 현장 응대", li3: "자료와 용어 표준화", li4: "장기 협업 창구" }
       },
@@ -155,7 +155,7 @@
         q6: "의료 문서 번역도 가능한가요?", a6: "진단서, 검사 결과, 동의서, 수술 후 안내 등의 중한 번역을 지원합니다. 문서 종류와 페이지 수를 먼저 보내주세요."
       },
       contact: {
-        kicker: "START A CONVERSATION", title: "일정을 먼저 확인하고,<br>다음 단계를 결정하세요.", lead: "위챗으로 ‘진료과 / 날짜 / 장소’를 보내주시면 가능한 서비스 범위를 확인합니다.",
+        kicker: "START A CONVERSATION", title: "<span class=\"contact-title-line\">일정을 먼저 확인하고,</span><span class=\"contact-title-line\">다음 단계를 결정하세요.</span>", lead: "위챗으로 ‘진료과 / 날짜 / 장소’를 보내주시면 가능한 서비스 범위를 확인합니다.",
         templateLabel: "아래 문의 양식을 바로 복사하세요", template: "진료과：<br>날짜 / 시간：<br>장소：<br>필요 범위：", templateText: "진료과：\n날짜 / 시간：\n장소：\n필요 범위：",
         copy: "복사", wechat: "위챗 QR 열기", email: "이메일 보내기", qrAlt: "Jstar Studio 위챗 QR 코드", qrTitle: "위챗 QR 상담", qrBody: "추가 후 진료과, 시간과 장소를 보내주세요"
       },
@@ -175,7 +175,7 @@
       nav: { services: "Services", approach: "Our approach", process: "Process", faq: "FAQ", contact: "WeChat" },
       hero: {
         eyebrow: "SEOUL · GANGNAM MEDICAL SUPPORT",
-        title: "Clear communication.<br><em>Confident care.</em>",
+        title: "<span class=\"hero-title-line\">Clear communication.</span><em class=\"hero-title-line\">Confident care.</em>",
         lead: "From the first consultation to post-procedure follow-ups, we accurately convey medical explanations and help organize the questions that matter.",
         primary: "Check interpreter availability",
         secondary: "Explore our services",
@@ -208,7 +208,7 @@
       },
       audience: {
         kicker: "WHO WE SUPPORT",
-        title: "Two types of needs, one clear standard",
+        title: "<span class=\"audience-title-line\">Two types of needs,</span><span class=\"audience-title-line\">one clear standard</span>",
         patient: { label: "FOR PATIENTS", title: "International patients in Korea", body: "Navigate consultations, examinations, and follow-ups with confidence, even when Korea’s medical process is unfamiliar.", li1: "Initial and treatment consultations", li2: "Pre- and post-procedure communication", li3: "Examination and aftercare guidance", li4: "VIP medical itinerary support" },
         business: { label: "FOR CLINICS & AGENCIES", title: "Clinics and medical service providers", body: "Coordinate interpreters by patient group, specialty, and schedule for a consistent communication experience.", li1: "Multi-location · multi-day scheduling", li2: "On-site support for Chinese clients", li3: "Standardized materials and terminology", li4: "Long-term coordination partner" }
       },
@@ -236,7 +236,7 @@
         q6: "Do you translate medical documents?", a6: "Yes. We translate medical certificates, test results, consent forms, and aftercare guides between Chinese and Korean. Send the document type and page count to confirm the scope."
       },
       contact: {
-        kicker: "START A CONVERSATION", title: "Check availability first,<br>then decide your next step.", lead: "Send the specialty, date, and location on WeChat, and we will confirm the available service options.",
+        kicker: "START A CONVERSATION", title: "<span class=\"contact-title-line\">Check availability first,</span><span class=\"contact-title-line\">then decide your next step.</span>", lead: "Send the specialty, date, and location on WeChat, and we will confirm the available service options.",
         templateLabel: "Copy this inquiry template", template: "Specialty:<br>Date / time:<br>Location:<br>Support needed:", templateText: "Specialty:\nDate / time:\nLocation:\nSupport needed:",
         copy: "Copy", wechat: "Open WeChat QR", email: "Send email", qrAlt: "Jstar Studio WeChat QR code", qrTitle: "Scan to contact us on WeChat", qrBody: "Send the specialty, time, and location after adding us"
       },

@@ -36,6 +36,11 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+html[lang="ko"] body {
+  font-family: "Noto Sans KR", "Pretendard", "Apple SD Gothic Neo", system-ui, sans-serif;
+  word-break: keep-all;
+}
+
 body.is-locked { overflow: hidden; }
 
 button, input, textarea, select { font: inherit; }
@@ -294,7 +299,31 @@ p { text-wrap: pretty; }
   line-height: 1.09;
 }
 
+.hero-title-line,
+.audience-title-line,
+.contact-title-line { display: block; }
+
+html:is([lang="zh-CN"], [lang="ko"]) .hero-title-line,
+html[lang="ko"] .audience-title-line,
+html[lang="ko"] .contact-title-line { white-space: nowrap; }
+
 .hero h1 em { color: var(--clay); font-family: Georgia, "Noto Serif SC", serif; font-weight: 500; font-style: italic; letter-spacing: -.06em; }
+
+html[lang="ko"] .hero h1 {
+  font-size: clamp(30px, 4.6vw, 58px);
+  letter-spacing: -.055em;
+}
+
+html[lang="ko"] .hero h1 em {
+  color: var(--ink);
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+html[lang="zh-CN"] .hero h1 { font-size: clamp(30px, 4.8vw, 60px); }
+
+html[lang="ko"] #contact-title { font-size: clamp(34px, 4.2vw, 54px); }
 
 .hero-lead { max-width: 590px; margin-bottom: 33px; color: #53605b; font-size: 18px; line-height: 1.85; }
 
@@ -829,6 +858,8 @@ p { text-wrap: pretty; }
   .qr-panel { width: min(100%, 420px); justify-self: center; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .footer-meta { grid-column: 1 / -1; justify-items: start; }
+
+  html:is([lang="zh-CN"], [lang="ko"]) .hero h1 { font-size: clamp(30px, 8.8vw, 58px); }
 }
 
 @media (max-width: 620px) {
@@ -869,6 +900,8 @@ p { text-wrap: pretty; }
 
   .section { padding: 82px 0; }
   .section-heading h2, .approach-copy h2, .faq-intro h2, .contact-copy h2 { font-size: 38px; }
+  html[lang="ko"] #audience-title { font-size: clamp(29px, 8.2vw, 38px); }
+  html[lang="ko"] #contact-title { font-size: clamp(22px, 8vw, 38px); }
   .section-heading { margin-bottom: 38px; }
   .section-heading > p { font-size: 14px; }
   .service-card { min-height: 325px; padding: 32px 27px; }
