@@ -1,20 +1,20 @@
 :root {
-  --ink: #15382f;
-  --ink-deep: #0d2a23;
+  --ink: #1d1d1f;
+  --ink-deep: #1d1d1f;
   --mint: #b8edcc;
   --mint-bright: #cbf5db;
-  --sand: #eee8dc;
-  --cream: #f8f6f0;
-  --paper: #fffefa;
-  --clay: #b85d43;
-  --text: #15201d;
-  --muted: #66706c;
-  --line: rgba(21, 56, 47, 0.15);
-  --shadow: 0 28px 70px rgba(21, 56, 47, 0.14);
-  --radius: 28px;
-  --radius-sm: 18px;
+  --sand: #f5f5f7;
+  --cream: #fbfbfd;
+  --paper: #ffffff;
+  --clay: #1a7a52;
+  --text: #1d1d1f;
+  --muted: #6e6e73;
+  --line: rgba(0, 0, 0, 0.1);
+  --shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  --radius: 24px;
+  --radius-sm: 16px;
   --container: 1180px;
-  --header-height: 82px;
+  --header-height: 56px;
   color-scheme: light;
 }
 
@@ -96,14 +96,14 @@ p { text-wrap: pretty; }
   height: var(--header-height);
   border-bottom: 1px solid transparent;
   background: color-mix(in srgb, var(--cream) 86%, transparent);
-  backdrop-filter: blur(18px);
+  backdrop-filter: saturate(180%) blur(20px);
   transition: height .25s ease, border-color .25s ease, box-shadow .25s ease;
 }
 
 .site-header.is-scrolled {
-  height: 70px;
-  border-color: rgba(21, 56, 47, 0.08);
-  box-shadow: 0 10px 32px rgba(21, 56, 47, 0.06);
+  height: 52px;
+  border-color: rgba(0, 0, 0, 0.08);
+  box-shadow: none;
 }
 
 .nav-shell {
@@ -531,7 +531,7 @@ html[lang="ko"] #contact-title { font-size: clamp(34px, 4.2vw, 54px); }
 
 .service-card:hover { z-index: 1; transform: translateY(-7px); box-shadow: 0 26px 60px rgba(21, 56, 47, .12); }
 
-.service-card--featured { background: #f4eee5; }
+.service-card--featured { background: var(--sand); }
 
 .card-number { color: #8a918e; font-family: Georgia, serif; font-size: 13px; font-style: italic; }
 
@@ -634,7 +634,7 @@ html[lang="ko"] #contact-title { font-size: clamp(34px, 4.2vw, 54px); }
   box-shadow: 0 0 0 40px currentColor, 0 0 0 80px currentColor;
 }
 
-.audience-card--patient { color: var(--ink-deep); background: #f4eee5; }
+.audience-card--patient { color: var(--ink-deep); background: var(--sand); }
 
 .audience-card--business { color: #fff; background: var(--ink); }
 
