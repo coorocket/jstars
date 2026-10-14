@@ -402,6 +402,7 @@
         }
       });
     }, { rootMargin: "0px 0px -8%", threshold: 0.08 });
+    document.documentElement.classList.add("js-reveal");
     revealElements.forEach((element) => observer.observe(element));
   } else {
     revealElements.forEach((element) => element.classList.add("is-visible"));
