@@ -34,6 +34,13 @@ t = walk(zh)
 t["meta"]["title"] = "韓國醫美翻譯·醫院中文陪同口譯 | 首爾江南 - Jstar Studio"
 t["meta"]["description"] = "來韓國做醫美、看皮膚科或整形諮詢？首爾江南中文醫療陪同翻譯，從初診、術前術後溝通到診斷書翻譯全程協助。依科別與日期快速媒合，嚴格保密。"
 t["hero"]["eyebrow"] = "首爾江南 · 韓國醫美中文陪同翻譯"
+# Confirmed image alt text (verbatim).
+t["services"]["imageAlt"] = "在江南皮膚科診間，醫療口譯員為客戶翻譯醫師的說明"
+t["audience"]["patientImageAlt"] = "口譯員在醫院櫃檯為客戶說明預約行程"
+t["audience"]["clinicImageAlt"] = "診所協調人員與口譯員以平板確認當天的看診行程"
+t["cases"]["item1"] = {"imageAlt": "皮膚科醫師說明術後護理，口譯員在旁傳達"}
+t["cases"]["item2"] = {"imageAlt": "整形外科回診時，醫師說明恢復進度，口譯員記錄重點"}
+t["cases"]["item3"] = {"imageAlt": "口譯員在醫院大廳查看手機行程，引導兩位客戶"}
 # Checklist PDF stays the Simplified edition.
 t["hero"]["secondaryHref"] = "assets/checklist-zh.pdf"
 t["contact"]["checklistHref"] = "assets/checklist-zh.pdf"

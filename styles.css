@@ -1147,3 +1147,13 @@ a.lang-button { display: inline-grid; place-items: center; width: auto; min-widt
 @media (max-width: 820px) {
   .mobile-action-bar a.is-primary { color: #fff; background: var(--ink); }
 }
+
+/* ---- Photos: services banner and card headers ---- */
+.section-photo { margin: 0 0 clamp(28px, 4vw, 48px); }
+.section-photo__img, .card-photo { display: block; width: 100%; height: auto; object-fit: cover; background: var(--sand); }
+.section-photo__img { aspect-ratio: 1600 / 893; border-radius: var(--radius); }
+.card-photo { aspect-ratio: 1600 / 1195; border-radius: 14px; margin-bottom: 28px; }
+.audience-card .card-photo { position: relative; z-index: 1; }
+@media (max-width: 560px) {
+  .card-photo { margin-bottom: 22px; }
+}

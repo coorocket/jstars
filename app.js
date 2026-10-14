@@ -34,6 +34,7 @@
         item3: { title: "没看懂的同意", body: "同意书、费用与方案没完全理解就签字，事后容易产生分歧。" }
       },
       services: {
+        imageAlt: "在江南皮肤科诊室，医疗口译员为客户翻译医生的说明",
         kicker: "WHAT WE DO",
         title: "不只是翻译语言，<br>更要读懂医疗现场。",
         lead: "根据科室、沟通难度、时间与地点匹配合适的口译员，让客户、医生与协调方始终在同一页。",
@@ -53,6 +54,8 @@
         flow: { patient: "客户需求", interpreter: "专业口译", clinic: "医疗说明" }
       },
       audience: {
+        patientImageAlt: "口译员在医院前台为客户说明预约行程",
+        clinicImageAlt: "诊所协调员与口译员用平板确认当天的就诊日程",
         kicker: "WHO WE SUPPORT",
         title: "<span class=\"audience-title-line\">两种需求，</span><span class=\"audience-title-line\">一套清晰标准</span>",
         patient: { label: "FOR PATIENTS", title: "来韩就医客户", body: "不熟悉韩国医疗流程，也能有条理地完成咨询、检查与复诊。", li1: "初诊与项目咨询", li2: "手术前后沟通", li3: "检查与护理说明", li4: "VIP医疗行程陪同" },
@@ -68,6 +71,9 @@
         promise: { title: "我们的承诺", p1: { title: "不夸大、不省略", body: "如实传达医生的说明，不添加、不美化。" }, p2: { title: "不替您做决定", body: "口译员不提供医疗建议，治疗与费用由您与医生决定。" }, p3: { title: "先说清，再开始", body: "范围与报价确认后才开始服务，可先咨询，无需立即决定。" } }
       },
       cases: {
+        item1: { imageAlt: "皮肤科医生说明术后护理，口译员在旁传达" },
+        item2: { imageAlt: "整形外科复诊时，医生说明恢复进度，口译员记录要点" },
+        item3: { imageAlt: "口译员在医院大厅查看手机行程，引导两位客户" },
         kicker: "SELECTED SCENARIOS", title: "常见服务场景", lead: "以下为示例场景，并非真实个案，仅用于说明我们如何提供支持。",
         case1: { title: "江南皮肤科项目咨询", body: "第一次在韩国做皮肤项目咨询，担心听不懂项目差异和恢复期。我们逐项传达医生的说明，并把您想问的问题提前列好，当场确认。", result: "重点：选择依据清晰" },
         case2: { title: "整形外科术前与复诊", body: "术前与复诊最怕漏掉风险和护理要点。我们准确传达风险、预期与术后护理，并在结束前与您再次确认理解一致。", result: "重点：风险信息不遗漏" },
@@ -167,6 +173,7 @@
         }
       },
       "services": {
+        "imageAlt": "在江南皮膚科診間，醫療口譯員為客戶翻譯醫師的說明",
         "kicker": "WHAT WE DO",
         "title": "不只是翻譯語言，<br>更要讀懂醫療現場。",
         "lead": "根據科別、溝通難度、時間與地點媒合合適的口譯員，讓客戶、醫生與協調方始終在同一頁。",
@@ -219,6 +226,8 @@
         }
       },
       "audience": {
+        "patientImageAlt": "口譯員在醫院櫃檯為客戶說明預約行程",
+        "clinicImageAlt": "診所協調人員與口譯員以平板確認當天的看診行程",
         "kicker": "WHO WE SUPPORT",
         "title": "<span class=\"audience-title-line\">兩種需求，</span><span class=\"audience-title-line\">一套清晰標準</span>",
         "patient": {
@@ -281,6 +290,9 @@
         }
       },
       "cases": {
+        "item1": { "imageAlt": "皮膚科醫師說明術後護理，口譯員在旁傳達" },
+        "item2": { "imageAlt": "整形外科回診時，醫師說明恢復進度，口譯員記錄重點" },
+        "item3": { "imageAlt": "口譯員在醫院大廳查看手機行程，引導兩位客戶" },
         "kicker": "SELECTED SCENARIOS",
         "title": "常見服務場景",
         "lead": "以下為示例場景，並非真實個案，僅用於說明我們如何提供支援。",
@@ -393,6 +405,7 @@
         item3: { title: "이해하지 못한 동의", body: "동의서, 비용과 진행 방식을 충분히 이해하지 못한 채 서명하면 나중에 이견이 생기기 쉽습니다." }
       },
       services: {
+        imageAlt: "강남 피부과 상담실에서 의사의 설명을 중국어로 통역하는 의료 통역사",
         kicker: "WHAT WE DO",
         title: "언어만 번역하는 것이 아니라,<br>의료 현장을 이해합니다.",
         lead: "진료과, 커뮤니케이션 난이도, 시간과 장소에 맞는 통역사를 배정해 고객·의료진·코디네이터의 이해를 일치시킵니다.",
@@ -412,6 +425,8 @@
         flow: { patient: "고객의 요구", interpreter: "전문 통역", clinic: "의료진 설명" }
       },
       audience: {
+        patientImageAlt: "병원 접수 데스크에서 방문 고객에게 예약 일정을 안내하는 통역사",
+        clinicImageAlt: "병원 코디네이터와 통역사가 태블릿으로 당일 진료 일정을 확인하는 모습",
         kicker: "WHO WE SUPPORT",
         title: "<span class=\"audience-title-line\">두 가지 요구,</span><span class=\"audience-title-line\">하나의 명확한 기준</span>",
         patient: { label: "FOR PATIENTS", title: "한국 방문 의료 고객", body: "한국 의료 절차가 낯설어도 상담, 검사와 재진을 체계적으로 진행할 수 있습니다.", li1: "초진 및 시술 상담", li2: "수술 전후 커뮤니케이션", li3: "검사와 관리 안내", li4: "VIP 의료 일정 동행" },
@@ -427,6 +442,9 @@
         promise: { title: "우리의 약속", p1: { title: "부풀리지 않고, 빼지 않습니다", body: "의료진의 설명을 있는 그대로 전하며 더하거나 미화하지 않습니다." }, p2: { title: "대신 결정하지 않습니다", body: "통역사는 의료 조언을 하지 않으며, 치료와 비용은 고객과 의료진이 결정합니다." }, p3: { title: "먼저 설명하고, 그다음 시작합니다", body: "범위와 견적을 확인한 뒤 서비스를 시작하며, 먼저 문의만 해도 됩니다." } }
       },
       cases: {
+        item1: { imageAlt: "피부과 의사가 시술 후 관리 방법을 설명하고 통역사가 옆에서 전달하는 장면" },
+        item2: { imageAlt: "성형외과 재진 상담에서 회복 일정을 설명하는 의사와 메모하는 통역사" },
+        item3: { imageAlt: "병원 로비에서 휴대폰으로 일정을 확인하며 고객 두 명을 안내하는 통역사" },
         kicker: "SELECTED SCENARIOS", title: "주요 서비스 장면", lead: "아래는 서비스 방식을 설명하기 위한 예시 상황이며, 실제 사례가 아닙니다.",
         case1: { title: "강남 피부과 시술 상담", body: "한국에서 처음 피부과 시술 상담을 받아 시술 차이와 회복 기간이 이해될지 걱정되는 경우입니다. 의료진의 설명을 항목별로 전하고, 묻고 싶은 질문을 미리 정리해 현장에서 확인합니다.", result: "핵심: 선택 기준 명확화" },
         case2: { title: "성형외과 수술 전·재진", body: "수술 전·재진에서는 위험과 관리 사항을 놓치기 쉽습니다. 위험, 기대 결과와 수술 후 관리를 정확히 전하고 마무리 전에 이해가 일치하는지 다시 확인합니다.", result: "핵심: 위험 정보 누락 방지" },
@@ -489,6 +507,7 @@
         item3: { title: "Consent not fully understood", body: "Signing consent forms, costs, or plans you did not fully understand can lead to disagreements later." }
       },
       services: {
+        imageAlt: "Medical interpreter translating a dermatologist's explanation into Mandarin at a Gangnam clinic",
         kicker: "WHAT WE DO",
         title: "More than translating words—<br>we understand the medical setting.",
         lead: "We match the right interpreter to the specialty, communication needs, time, and location so patients, clinicians, and coordinators stay aligned.",
@@ -508,6 +527,8 @@
         flow: { patient: "Patient needs", interpreter: "Professional interpretation", clinic: "Medical guidance" }
       },
       audience: {
+        patientImageAlt: "Interpreter explaining the appointment schedule to a visitor at the clinic reception",
+        clinicImageAlt: "Clinic coordinator and interpreter reviewing the day's appointments on a tablet",
         kicker: "WHO WE SUPPORT",
         title: "<span class=\"audience-title-line\">Two types of needs,</span><span class=\"audience-title-line\">one clear standard</span>",
         patient: { label: "FOR PATIENTS", title: "International patients in Korea", body: "Navigate consultations, examinations, and follow-ups with confidence, even when Korea’s medical process is unfamiliar.", li1: "Initial and treatment consultations", li2: "Pre- and post-procedure communication", li3: "Examination and aftercare guidance", li4: "VIP medical itinerary support" },
@@ -523,6 +544,9 @@
         promise: { title: "Our commitments", p1: { title: "No exaggeration, no omission", body: "We convey the doctor’s explanations as they are—nothing added, nothing softened." }, p2: { title: "We don’t decide for you", body: "Interpreters do not give medical advice. Treatment and costs are decided by you and your doctor." }, p3: { title: "Clarity first, then we begin", body: "Service starts only after the scope and quote are confirmed. You can simply ask first." } }
       },
       cases: {
+        item1: { imageAlt: "Dermatologist explaining aftercare while the interpreter relays it beside the patient" },
+        item2: { imageAlt: "Plastic surgery follow-up: the doctor explains the recovery timeline as the interpreter takes notes" },
+        item3: { imageAlt: "Interpreter checking the schedule on her phone while guiding two clients through the clinic lobby" },
         kicker: "SELECTED SCENARIOS", title: "Common service scenarios", lead: "These are illustrative scenarios to explain how we support you, not real client cases.",
         case1: { title: "Dermatology consultation in Gangnam", body: "A first dermatology consultation in Korea, with worries about understanding the treatment differences and recovery time. We relay the doctor’s explanation point by point and confirm the questions you prepared in advance.", result: "Focus: clear decision criteria" },
         case2: { title: "Plastic surgery consultation and follow-up", body: "Before surgery and at follow-ups, risks and aftercare points are easy to miss. We convey risks, expectations, and aftercare accurately and reconfirm that you understand before the visit ends.", result: "Focus: no missing risk information" },
