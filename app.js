@@ -4,8 +4,8 @@
   const translations = {
     "zh-CN": {
       meta: {
-        title: "Jstar Studio | 首尔·江南中文医疗陪同口译",
-        description: "为来韩就医客户、江南诊所与医疗服务机构提供中文医疗陪同口译、术前术后沟通、文件翻译与多日程协调。快速匹配，严格保密。",
+        title: "韩国医美翻译·医院中文陪同口译 | 首尔江南 - Jstar Studio",
+        description: "来韩国做医美、看皮肤科或整形咨询？首尔江南中文医疗陪同翻译，从初诊、术前术后沟通到诊断书翻译全程支持。按科室和日期快速匹配，严格保密。",
         socialTitle: "让每一次医疗沟通，都清楚而安心",
         socialDescription: "首尔·江南中文医疗陪同口译｜按科室与行程快速匹配，严格保密。"
       },
@@ -14,7 +14,7 @@
       hero: {
         secondaryHref: "assets/checklist-zh.pdf",
         step1: { label: "就诊前", text: "一起整理要问的问题" }, step2: { label: "就诊中", text: "准确传达医生的说明" }, step3: { label: "结束前", text: "再次确认您的理解" },
-        eyebrow: "首尔江南 · 中文医疗陪同口译",
+        eyebrow: "首尔江南 · 韩国医美中文陪同翻译",
         title: "<span class=\"hero-title-line\">没问清、没听清，</span><em class=\"hero-title-line\">不必带着担心回国。</em>",
         lead: "想问的没问完，听到的说明拿不准——有过这样的经历吧？",
         primary: "确认口译档期",
@@ -97,10 +97,274 @@
       modal: { kicker: "WECHAT CONSULTATION", title: "扫码添加微信", lead: "发送科室、日期与地点，我们会确认档期与服务范围。", tip: "可先咨询，无需立即决定", download: "保存二维码" },
       toast: { copied: "咨询模板已复制" }
     },
+    "zh-TW": {
+      "meta": {
+        "title": "韓國醫美翻譯·醫院中文陪同口譯 | 首爾江南 - Jstar Studio",
+        "description": "來韓國做醫美、看皮膚科或整形諮詢？首爾江南中文醫療陪同翻譯，從初診、術前術後溝通到診斷書翻譯全程協助。依科別與日期快速媒合，嚴格保密。",
+        "socialTitle": "讓每一次醫療溝通，都清楚而安心",
+        "socialDescription": "首爾·江南中文醫療陪同口譯｜依科別與行程快速媒合，嚴格保密。"
+      },
+      "a11y": {
+        "skip": "跳到主要內容",
+        "openMenu": "開啟選單",
+        "closeMenu": "關閉選單",
+        "closeModal": "關閉微信QR Code"
+      },
+      "nav": {
+        "services": "服務",
+        "approach": "專業方式",
+        "process": "流程",
+        "faq": "問答",
+        "contact": "微信諮詢"
+      },
+      "hero": {
+        "secondaryHref": "assets/checklist-zh.pdf",
+        "step1": {
+          "label": "就診前",
+          "text": "一起整理要問的問題"
+        },
+        "step2": {
+          "label": "就診中",
+          "text": "準確傳達醫生的說明"
+        },
+        "step3": {
+          "label": "結束前",
+          "text": "再次確認您的理解"
+        },
+        "eyebrow": "首爾江南 · 韓國醫美中文陪同翻譯",
+        "title": "<span class=\"hero-title-line\">沒問清、沒聽清，</span><em class=\"hero-title-line\">不必帶著擔心回國。</em>",
+        "lead": "想問的沒問完，聽到的說明拿不準——有過這樣的經歷吧？",
+        "primary": "確認口譯檔期",
+        "secondary": "下載就診前問題清單",
+        "point1": "不誇大、不省略",
+        "point2": "就診資訊嚴格保密",
+        "imageAlt": "中文醫療口譯員在診室協助醫生與患者溝通",
+        "availability": "可提出檔期諮詢",
+        "imageKicker": "ON-SITE SUPPORT",
+        "imageTitle": "現場口譯，不遺漏關鍵細節"
+      },
+      "trust": {
+        "years": "年綜合經驗",
+        "sessions": "場服務紀錄",
+        "area": "首爾 · 江南現場支援",
+        "private": "保密流程"
+      },
+      "stakes": {
+        "kicker": "WHAT'S AT STAKE",
+        "title": "溝通出現缺口，<br>往往回國後才發現。",
+        "lead": "在陌生的醫療環境裡，下面這些情況都可能發生。",
+        "item1": {
+          "title": "沒問完的問題",
+          "body": "診療時間有限，想問的事沒問清，回國後才發現還有疑問。"
+        },
+        "item2": {
+          "title": "沒聽懂的說明",
+          "body": "注意事項、禁忌與複診時間若聽錯或漏聽，可能影響術後護理。"
+        },
+        "item3": {
+          "title": "沒看懂的同意",
+          "body": "同意書、費用與方案沒完全理解就簽字，事後容易產生分歧。"
+        }
+      },
+      "services": {
+        "kicker": "WHAT WE DO",
+        "title": "不只是翻譯語言，<br>更要讀懂醫療現場。",
+        "lead": "根據科別、溝通難度、時間與地點媒合合適的口譯員，讓客戶、醫生與協調方始終在同一頁。",
+        "item1": {
+          "title": "醫療陪同口譯",
+          "body": "門診、檢查、方案說明、術前溝通與術後複診，全流程現場陪同。",
+          "tag1": "重點資訊複述確認",
+          "tag2": "疑問整理與溝通輔助"
+        },
+        "item2": {
+          "title": "皮膚科 · 整形外科",
+          "body": "清楚傳達療程差異、風險、預期、禁忌與護理重點。",
+          "tag1": "專業術語準確表達",
+          "tag2": "方案與費用溝通"
+        },
+        "item3": {
+          "title": "診所 · 機構協作",
+          "body": "支援多門店、多客戶與多時段安排，減少排班和溝通斷點。",
+          "tag1": "依需快速媒合",
+          "tag2": "固定窗口統一溝通"
+        },
+        "item4": {
+          "title": "醫療文件翻譯",
+          "body": "診斷書、檢查報告、同意書、術後指導及機構資料翻譯。",
+          "tag1": "中韓雙向翻譯",
+          "tag2": "術語與格式校對"
+        }
+      },
+      "approach": {
+        "kicker": "OUR APPROACH",
+        "title": "好的醫療口譯，<br>讓三方都更有把握。",
+        "lead": "在陌生的國家面對醫療決定，緊張是很正常的。我們先理解就診目的與您的顧慮，再準確傳達、確認重點、減少誤解。",
+        "point1": {
+          "title": "聽懂語境",
+          "body": "結合科別、療程與客戶顧慮理解真正意圖。"
+        },
+        "point2": {
+          "title": "準確傳達",
+          "body": "不誇大、不省略，保留醫生說明的專業邊界。"
+        },
+        "point3": {
+          "title": "雙向確認",
+          "body": "整理關鍵問題，幫助雙方確認理解一致。"
+        },
+        "quote": "一句話可以被翻譯，但一次醫療決定需要被真正理解。",
+        "flow": {
+          "patient": "客戶需求",
+          "interpreter": "專業口譯",
+          "clinic": "醫療說明"
+        }
+      },
+      "audience": {
+        "kicker": "WHO WE SUPPORT",
+        "title": "<span class=\"audience-title-line\">兩種需求，</span><span class=\"audience-title-line\">一套清晰標準</span>",
+        "patient": {
+          "label": "FOR PATIENTS",
+          "title": "來韓就醫客戶",
+          "body": "不熟悉韓國醫療流程，也能有條理地完成諮詢、檢查與複診。",
+          "li1": "初診與療程諮詢",
+          "li2": "手術前後溝通",
+          "li3": "檢查與護理說明",
+          "li4": "VIP醫療行程陪同"
+        },
+        "business": {
+          "label": "FOR CLINICS & AGENCIES",
+          "title": "診所與醫療服務機構",
+          "body": "依客群、科別與排班需求協調合適口譯員，穩定客戶溝通體驗。",
+          "li1": "多門店 · 多日程排班",
+          "li2": "中國客戶現場接待",
+          "li3": "資料與術語標準化",
+          "li4": "長期協作窗口"
+        }
+      },
+      "process": {
+        "kicker": "HOW IT WORKS",
+        "title": "Jstar 四步安心流程",
+        "lead": "只需先提供科別、時間與地點。我們會確認需求後再媒合，不需要立即決定。",
+        "step1": {
+          "title": "提出需求",
+          "body": "科別 · 日期 · 地點 · 所需範圍"
+        },
+        "step2": {
+          "title": "確認與報價",
+          "body": "核對難度、時長與行程細節"
+        },
+        "step3": {
+          "title": "媒合口譯員",
+          "body": "依經驗、科別與時間安排"
+        },
+        "step4": {
+          "title": "現場與跟進",
+          "body": "陪同溝通，必要時整理後續重點"
+        },
+        "privacy": {
+          "title": "隱私從第一次諮詢開始",
+          "body": "個人資料、就診資訊與現場溝通內容均依保密原則處理，僅用於本次服務安排。"
+        },
+        "promise": {
+          "title": "我們的承諾",
+          "p1": {
+            "title": "不誇大、不省略",
+            "body": "如實傳達醫生的說明，不增添、不美化。"
+          },
+          "p2": {
+            "title": "不替您做決定",
+            "body": "口譯員不提供醫療建議，治療與費用由您與醫生決定。"
+          },
+          "p3": {
+            "title": "先說清，再開始",
+            "body": "範圍與報價確認後才開始服務，可先諮詢，無需立即決定。"
+          }
+        }
+      },
+      "cases": {
+        "kicker": "SELECTED SCENARIOS",
+        "title": "常見服務場景",
+        "lead": "以下為示例場景，並非真實個案，僅用於說明我們如何提供支援。",
+        "case1": {
+          "title": "江南皮膚科療程諮詢",
+          "body": "第一次在韓國做皮膚療程諮詢，擔心聽不懂療程差異和恢復期。我們逐項傳達醫生的說明，並把您想問的問題提前列好，當場確認。",
+          "result": "重點：選擇依據清晰"
+        },
+        "case2": {
+          "title": "整形外科術前與複診",
+          "body": "術前與複診最怕漏掉風險和護理要點。我們準確傳達風險、預期與術後護理，並在結束前與您再次確認理解一致。",
+          "result": "重點：風險資訊不遺漏"
+        },
+        "case3": {
+          "title": "多客戶多時段排班",
+          "body": "為診所或服務機構協調多名口譯員，統一變更與現場溝通窗口。",
+          "result": "重點：減少排班斷點"
+        }
+      },
+      "faq": {
+        "kicker": "FAQ",
+        "title": "諮詢前，<br>您可能想知道",
+        "lead": "沒有找到答案？可以先傳送科別、日期和地點，我們會確認後回覆。",
+        "action": "直接諮詢",
+        "q1": "醫療陪同口譯涵蓋哪些環節？",
+        "a1": "可涵蓋初診、檢查說明、療程或手術諮詢、術前溝通、術後複診與護理說明，依實際需要安排。",
+        "q2": "可以當天或緊急安排嗎？",
+        "a2": "可以先提供時間、地點與科別，我們會優先確認可用口譯員並儘快回覆。是否可安排以當日檔期為準。",
+        "q3": "費用如何計算？",
+        "a3": "根據時長、地點、科別難度、是否需要多日程排班及文件準備等因素報價，確認後再開始服務。",
+        "q4": "如何保護就診資訊？",
+        "a4": "口譯員遵循保密原則，個人資料和診療內容僅用於服務安排與現場溝通，不對外公開。",
+        "q5": "診所可以長期合作嗎？",
+        "a5": "可以。支援依門店、科別、客群和時段建立長期協作流程，也可先從單次服務開始。",
+        "q6": "醫療文件也可以翻譯嗎？",
+        "a6": "支援診斷書、檢查報告、同意書、術後指導等中韓翻譯。請先傳送文件類型與頁數確認範圍。",
+        "q7": "口譯員會給我醫療建議嗎？",
+        "a7": "不會。口譯員只負責準確傳達，不提供醫療建議，也不替醫生或您做決定。治療與費用由您與醫生決定。",
+        "q8": "會不會省略或美化醫生說的話？",
+        "a8": "不會。我們遵循不誇大、不省略的原則，保留醫生說明的專業邊界。",
+        "q9": "我不知道該問什麼，怎麼辦？",
+        "a9": "可以先告訴我們就診目的與顧慮，我們協助整理需要向醫生確認的問題清單。",
+        "q10": "諮詢後一定要預約嗎？",
+        "a10": "不需要。可以先傳送科別、日期與地點了解情況，確認後再決定是否開始。"
+      },
+      "contact": {
+        "checklistHref": "assets/checklist-zh.pdf",
+        "checklist": "免費下載《就診前問題清單》（PDF）",
+        "ps": "P.S. 還沒決定也沒關係。先下載清單，帶著問題去就診，會更安心。",
+        "kicker": "START A CONVERSATION",
+        "title": "<span class=\"contact-title-line\">先確認檔期，</span><span class=\"contact-title-line\">再決定下一步。</span>",
+        "lead": "透過微信傳送“科別 / 日期 / 地點”，我們會根據情況確認可安排範圍。",
+        "templateLabel": "可直接複製這段諮詢模板",
+        "template": "科別：<br>日期 / 時間：<br>地點：<br>需要範圍：",
+        "templateText": "科別：\n日期 / 時間：\n地點：\n需要範圍：",
+        "copy": "複製",
+        "wechat": "開啟微信QR Code",
+        "email": "寄送郵件",
+        "qrAlt": "Jstar Studio 微信QR Code",
+        "qrTitle": "微信掃碼諮詢",
+        "qrBody": "加入後傳送科別、時間與地點"
+      },
+      "footer": {
+        "summary": "首爾 · 江南中文醫療口譯與專業翻譯"
+      },
+      "mobile": {
+        "email": "郵件",
+        "wechat": "微信諮詢"
+      },
+      "modal": {
+        "kicker": "WECHAT CONSULTATION",
+        "title": "掃碼加入微信好友",
+        "lead": "傳送科別、日期與地點，我們會確認檔期與服務範圍。",
+        "tip": "可先諮詢，無需立即決定",
+        "download": "儲存QR Code"
+      },
+      "toast": {
+        "copied": "諮詢模板已複製"
+      }
+    },
     ko: {
       meta: {
-        title: "Jstar Studio | 서울·강남 중국어 의료 통역",
-        description: "한국을 방문한 중국어권 의료 고객과 강남 의료기관을 위한 중국어 의료 동행 통역, 수술 전후 커뮤니케이션, 문서 번역 및 일정 조율 서비스입니다.",
+        title: "중국어 통역 전문, 병원·의료통역 | 서울 강남 - 제이스타",
+        description: "병원 상담, 피부과·성형외과 시술 설명, 수술 전후 동행까지 중국어 의료통역 전문. 진단서·동의서 중한 번역, 당일 일정 문의 가능. 비밀유지 원칙으로 진행합니다.",
         socialTitle: "모든 의료 커뮤니케이션을 명확하고 안심되게",
         socialDescription: "서울·강남 중국어 의료 동행 통역｜진료과와 일정에 맞춘 빠른 매칭, 철저한 비밀유지."
       },
@@ -109,7 +373,7 @@
       hero: {
         secondaryHref: "assets/checklist-ko.pdf",
         step1: { label: "진료 전", text: "궁금한 점을 함께 정리" }, step2: { label: "진료 중", text: "의료진의 설명을 정확히 통역" }, step3: { label: "끝나기 전", text: "이해한 내용을 다시 확인" },
-        eyebrow: "서울 강남 · 중국어 의료 동행 통역",
+        eyebrow: "서울 강남 중국어 통역 · 병원·의료통역 전문",
         title: "<span class=\"hero-title-line\">진료실에서 놓친 말이</span><em class=\"hero-title-line\">걱정이 되지 않게.</em>",
         lead: "묻고 싶은 걸 다 못 묻고 돌아온 적, 있으시죠?",
         primary: "통역 일정 먼저 확인",
@@ -190,12 +454,13 @@
       footer: { summary: "서울 · 강남 중국어 의료 통역 및 전문 번역" },
       mobile: { email: "이메일", wechat: "위챗 상담" },
       modal: { kicker: "WECHAT CONSULTATION", title: "위챗 QR로 추가", lead: "진료과, 날짜와 장소를 보내주시면 일정과 서비스 범위를 확인합니다.", tip: "먼저 문의하고 나중에 결정해도 됩니다", download: "QR 이미지 저장" },
+      phone: { call: "전화 상담", sms: "문자 상담", note: "휴대폰에서 누르면 바로 연결됩니다.", smsBody: "[제이스타 통역 문의] 병원명/진료과, 날짜·시간, 장소를 적어 주세요." },
       toast: { copied: "문의 양식을 복사했습니다" }
     },
     en: {
       meta: {
-        title: "Jstar Studio | Chinese Medical Interpretation in Seoul & Gangnam",
-        description: "Chinese medical escort interpretation, pre- and post-procedure communication, document translation, and multi-appointment coordination for international patients and medical providers in Seoul and Gangnam.",
+        title: "Medical Interpreter in Seoul (Mandarin–Korean) | Gangnam Clinics - Jstar",
+        description: "Mandarin–Korean medical interpreter and translator for plastic surgery, dermatology and hospital visits in Gangnam, Seoul. For patients from Singapore, Malaysia, Taiwan and Hong Kong. Pre/post-op escort, document translation, strict confidentiality.",
         socialTitle: "Clear communication. Confident care.",
         socialDescription: "Chinese medical interpretation in Seoul and Gangnam, with fast matching by specialty and schedule and strict confidentiality."
       },
@@ -204,7 +469,7 @@
       hero: {
         secondaryHref: "assets/checklist-en.pdf",
         step1: { label: "Before", text: "We organize your questions with you" }, step2: { label: "During", text: "We convey the doctor’s explanation accurately" }, step3: { label: "Before you leave", text: "We reconfirm what you understood" },
-        eyebrow: "SEOUL · GANGNAM · CHINESE MEDICAL ESCORT INTERPRETING",
+        eyebrow: "Mandarin Medical Interpreter in Seoul · Gangnam",
         title: "<span class=\"hero-title-line\">What you miss in the room</span><em class=\"hero-title-line\">shouldn’t follow you home.</em>",
         lead: "Ever left an appointment without asking everything you wanted?",
         primary: "Check interpreter availability",
@@ -290,7 +555,8 @@
   };
 
   const byPath = (object, path) => path.split(".").reduce((value, part) => value?.[part], object);
-  const languageButtons = [...document.querySelectorAll("[data-lang]")];
+  // Each language lives on its own URL; the page language comes from <html lang>.
+  const pageBase = document.documentElement.dataset.base || "";
   const menuToggle = document.getElementById("menuToggle");
   const primaryNav = document.getElementById("primaryNav");
   const siteHeader = document.getElementById("siteHeader");
@@ -301,17 +567,7 @@
   let lastFocusedElement = null;
   let toastTimer = null;
 
-  const updateMeta = (language) => {
-    const meta = translations[language].meta;
-    document.title = meta.title;
-    document.querySelector('meta[name="description"]')?.setAttribute("content", meta.description);
-    document.querySelector('meta[property="og:title"]')?.setAttribute("content", meta.socialTitle);
-    document.querySelector('meta[property="og:description"]')?.setAttribute("content", meta.socialDescription);
-    document.querySelector('meta[name="twitter:title"]')?.setAttribute("content", meta.socialTitle);
-    document.querySelector('meta[name="twitter:description"]')?.setAttribute("content", meta.socialDescription);
-  };
-
-  const applyLanguage = (language, persist = true) => {
+  const applyLanguage = (language) => {
     const dictionary = translations[language] || translations["zh-CN"];
     activeLanguage = translations[language] ? language : "zh-CN";
     document.documentElement.lang = activeLanguage;
@@ -326,7 +582,7 @@
     });
     document.querySelectorAll("[data-i18n-href]").forEach((element) => {
       const value = byPath(dictionary, element.dataset.i18nHref);
-      if (typeof value === "string") element.setAttribute("href", value);
+      if (typeof value === "string") element.setAttribute("href", pageBase + value);
     });
     document.querySelectorAll("[data-i18n-alt]").forEach((element) => {
       const value = byPath(dictionary, element.dataset.i18nAlt);
@@ -338,17 +594,6 @@
       if (element === menuToggle && menuToggle.getAttribute("aria-expanded") === "true") value = dictionary.a11y.closeMenu;
       if (typeof value === "string") element.setAttribute("aria-label", value);
     });
-
-    languageButtons.forEach((button) => {
-      const selected = button.dataset.lang === activeLanguage;
-      button.classList.toggle("is-active", selected);
-      button.setAttribute("aria-pressed", String(selected));
-    });
-
-    updateMeta(activeLanguage);
-    if (persist) {
-      try { localStorage.setItem("jstar-language", activeLanguage); } catch (_) { /* no-op */ }
-    }
   };
 
   const closeMenu = () => {
@@ -411,12 +656,26 @@
     if (copied) showToast();
   };
 
-  languageButtons.forEach((button) => button.addEventListener("click", () => applyLanguage(button.dataset.lang)));
   menuToggle?.addEventListener("click", toggleMenu);
   primaryNav?.querySelectorAll("a").forEach((link) => link.addEventListener("click", closeMenu));
   document.querySelectorAll("[data-open-wechat]").forEach((button) => button.addEventListener("click", () => openModal(button)));
   document.querySelectorAll("[data-close-wechat]").forEach((button) => button.addEventListener("click", closeModal));
   document.getElementById("copyTemplate")?.addEventListener("click", copyInquiryTemplate);
+
+  // Korean page: tel:/sms: links are built on click so the number is never present in the page source.
+  const contactNumber = () => ["010", "57", "755", "855"].join("");
+  document.querySelectorAll("[data-contact]").forEach((link) => {
+    link.addEventListener("click", (event) => {
+      event.preventDefault();
+      closeMenu();
+      const body = translations[activeLanguage]?.phone?.smsBody || "";
+      const url = link.dataset.contact === "sms"
+        ? "sms:" + contactNumber() + "?&body=" + encodeURIComponent(body)
+        : "tel:" + contactNumber();
+      link.setAttribute("href", url);
+      try { window.location.href = url; } catch (_) { /* desktop without a handler: the on-page note explains */ }
+    });
+  });
 
   document.addEventListener("keydown", (event) => {
     if (event.key === "Escape") {
@@ -454,8 +713,6 @@
     revealElements.forEach((element) => element.classList.add("is-visible"));
   }
 
-  let savedLanguage = "zh-CN";
-  try { savedLanguage = localStorage.getItem("jstar-language") || "zh-CN"; } catch (_) { /* no-op */ }
-  applyLanguage(savedLanguage, false);
+  applyLanguage(document.documentElement.lang);
   document.getElementById("year").textContent = new Date().getFullYear();
 })();

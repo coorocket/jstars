@@ -291,7 +291,7 @@ p { text-wrap: pretty; }
 
 .eyebrow > span:first-child { width: 28px; height: 1px; background: currentColor; }
 
-.hero h1 {
+.hero .hero-title {
   max-width: 670px;
   margin-bottom: 27px;
   color: var(--ink);
@@ -303,32 +303,32 @@ p { text-wrap: pretty; }
 .audience-title-line,
 .contact-title-line { display: block; }
 
-html:is([lang="zh-CN"], [lang="ko"]) .hero-title-line,
+html:is([lang="zh-CN"], [lang="zh-TW"], [lang="ko"]) .hero-title-line,
 html[lang="ko"] .audience-title-line,
 html[lang="ko"] .contact-title-line { white-space: nowrap; }
 
-.hero h1 em { color: var(--clay); font-family: Georgia, "Noto Serif SC", serif; font-weight: 500; font-style: italic; letter-spacing: -.06em; }
+.hero .hero-title em { color: var(--clay); font-family: Georgia, "Noto Serif SC", serif; font-weight: 500; font-style: italic; letter-spacing: -.06em; }
 
-html[lang="zh-CN"] .hero h1 em {
+html:is([lang="zh-CN"], [lang="zh-TW"]) .hero .hero-title em {
   font-family: "Noto Sans SC", "Noto Sans CJK SC", sans-serif;
   font-weight: 700;
   font-style: normal;
   letter-spacing: -.045em;
 }
 
-html[lang="ko"] .hero h1 {
+html[lang="ko"] .hero .hero-title {
   font-size: clamp(30px, 4.6vw, 58px);
   letter-spacing: -.055em;
 }
 
-html[lang="ko"] .hero h1 em {
+html[lang="ko"] .hero .hero-title em {
   color: var(--ink);
   font-family: "Noto Sans KR", sans-serif;
   font-weight: 800;
   font-style: normal;
 }
 
-html[lang="zh-CN"] .hero h1 { font-size: clamp(30px, 4.8vw, 60px); }
+html:is([lang="zh-CN"], [lang="zh-TW"]) .hero .hero-title { font-size: clamp(30px, 4.8vw, 60px); }
 
 html[lang="ko"] #contact-title { font-size: clamp(34px, 4.2vw, 54px); }
 
@@ -827,7 +827,7 @@ html[lang="ko"] #contact-title { font-size: clamp(34px, 4.2vw, 54px); }
 
   .nav-actions .button { display: none; }
   .hero-grid { gap: 46px; }
-  .hero h1 { font-size: clamp(50px, 6vw, 64px); }
+  .hero .hero-title { font-size: clamp(50px, 6vw, 64px); }
   .section { padding: 100px 0; }
   .approach-grid { gap: 50px; }
   .approach-visual { min-height: 560px; padding: 52px; }
@@ -866,7 +866,7 @@ html[lang="ko"] #contact-title { font-size: clamp(34px, 4.2vw, 54px); }
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .footer-meta { grid-column: 1 / -1; justify-items: start; }
 
-  html:is([lang="zh-CN"], [lang="ko"]) .hero h1 { font-size: clamp(30px, 8.8vw, 58px); }
+  html:is([lang="zh-CN"], [lang="zh-TW"], [lang="ko"]) .hero .hero-title { font-size: clamp(30px, 8.8vw, 58px); }
 }
 
 @media (max-width: 620px) {
@@ -886,7 +886,7 @@ html[lang="ko"] #contact-title { font-size: clamp(34px, 4.2vw, 54px); }
   .hero { padding-top: 34px; }
   .hero-grid { gap: 45px; }
   .eyebrow { margin-bottom: 18px; font-size: 9px; letter-spacing: .13em; }
-  .hero h1 { margin-bottom: 22px; font-size: clamp(42px, 12vw, 58px); line-height: 1.12; }
+  .hero .hero-title { margin-bottom: 22px; font-size: clamp(42px, 12vw, 58px); line-height: 1.12; }
   .hero-lead { font-size: 16px; line-height: 1.75; }
   .hero-actions { align-items: stretch; flex-direction: column; gap: 12px; }
   .hero-actions .button { width: 100%; }
@@ -994,8 +994,8 @@ html[lang="ko"] #contact-title { font-size: clamp(34px, 4.2vw, 54px); }
 .hero-copy { max-width: 920px; text-align: center; }
 .eyebrow { justify-content: center; margin-bottom: 20px; font-size: 12px; font-weight: 600; letter-spacing: .12em; }
 .eyebrow > span:first-child { display: none; }
-.hero h1 { max-width: none; margin: 0 auto 24px; font-size: clamp(44px, 7vw, 88px); font-weight: 700; line-height: 1.05; letter-spacing: -.035em; }
-.hero h1 em { font-family: inherit; font-style: normal; font-weight: 700; letter-spacing: inherit; }
+.hero .hero-title { max-width: none; margin: 0 auto 24px; font-size: clamp(44px, 7vw, 88px); font-weight: 700; line-height: 1.05; letter-spacing: -.035em; }
+.hero .hero-title em { font-family: inherit; font-style: normal; font-weight: 700; letter-spacing: inherit; }
 .hero-lead { max-width: 640px; margin: 0 auto 32px; color: var(--muted); font-size: 21px; line-height: 1.5; }
 .hero-actions { justify-content: center; gap: 24px; }
 .text-link { padding: 0; border: 0; color: var(--clay); font-weight: 500; }
@@ -1015,7 +1015,7 @@ html[lang="ko"] #contact-title { font-size: clamp(34px, 4.2vw, 54px); }
 
 @media (max-width: 620px) {
   .hero { padding-top: 40px; }
-  .hero h1 { font-size: clamp(36px, 11vw, 52px); }
+  .hero .hero-title { font-size: clamp(36px, 11vw, 52px); }
   .hero-lead { font-size: 17px; }
   .hero-image-frame { aspect-ratio: 4 / 5; border-radius: 20px; }
 }
@@ -1129,4 +1129,21 @@ html[lang="ko"] #contact-title { font-size: clamp(34px, 4.2vw, 54px); }
 @media (max-width: 620px) {
   .hero-steps { grid-template-columns: 1fr; gap: 14px; max-width: 360px; }
   .hero-steps li { grid-template-columns: 76px 1fr; align-items: baseline; padding: 0; border-left: 0; }
+}
+
+/* ---- Multi-URL i18n: zh-TW typography, language links, h1 eyebrow, Korean call/SMS CTAs ---- */
+html[lang="zh-TW"] body { font-family: Inter, "Avenir Next", "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", system-ui, sans-serif; }
+html[lang="zh-TW"] .hero .hero-title em { font-family: "Noto Sans TC", "Noto Sans CJK TC", sans-serif; }
+.hero .hero-title { text-wrap: balance; }
+h1.eyebrow { font-family: inherit; line-height: 1.4; text-wrap: balance; }
+a.lang-button { display: inline-grid; place-items: center; width: auto; min-width: 34px; padding: 0 9px; text-decoration: none; }
+@media (max-width: 1020px) { .mobile-language { flex-wrap: wrap; } }
+.button--ghost { color: var(--ink); background: transparent; border-color: var(--line); }
+.button--ghost:hover { background: var(--sand); }
+.hero-actions--secondary { margin-top: 14px; }
+.contact-note { margin: 12px 0 0; color: var(--muted); font-size: 13px; text-align: center; }
+.contact-note--light { color: rgba(255,255,255,.55); text-align: left; }
+.hero .contact-note { margin-top: 10px; }
+@media (max-width: 820px) {
+  .mobile-action-bar a.is-primary { color: #fff; background: var(--ink); }
 }
