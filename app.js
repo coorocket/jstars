@@ -14,7 +14,7 @@
       hero: {
         eyebrow: "SEOUL · GANGNAM MEDICAL SUPPORT",
         title: "<span class=\"hero-title-line\">让每一次医疗沟通，</span><em class=\"hero-title-line\">都清楚而安心。</em>",
-        lead: "从初诊咨询到术后复诊，准确传达医生说明，也替您整理真正需要确认的问题。",
+        lead: "第一次在韩国就医，怕听不懂、说不清？我们在诊室陪您，准确传达医生的说明，帮您把想问的问题问清楚。",
         primary: "确认口译档期",
         secondary: "查看服务范围",
         point1: "中文 · 韩文现场支持",
@@ -25,6 +25,12 @@
         imageTitle: "现场口译，不遗漏关键细节"
       },
       trust: { years: "年综合经验", sessions: "场服务记录", area: "首尔 · 江南现场支持", private: "保密流程" },
+      stakes: {
+        kicker: "WHAT'S AT STAKE", title: "沟通出现缺口，<br>往往回国后才发现。", lead: "在陌生的医疗环境里，下面这些情况都可能发生。",
+        item1: { title: "没问完的问题", body: "诊疗时间有限，想问的事没问清，回国后才发现还有疑问。" },
+        item2: { title: "没听懂的说明", body: "注意事项、禁忌与复诊时间若听错或漏听，可能影响术后护理。" },
+        item3: { title: "没看懂的同意", body: "同意书、费用与方案没完全理解就签字，事后容易产生分歧。" }
+      },
       services: {
         kicker: "WHAT WE DO",
         title: "不只是翻译语言，<br>更要读懂医疗现场。",
@@ -37,7 +43,7 @@
       approach: {
         kicker: "OUR APPROACH",
         title: "好的医疗口译，<br>让三方都更有把握。",
-        lead: "我们先理解就诊目的与现场角色，再准确传达内容、确认重点、减少误解。",
+        lead: "在陌生的国家面对医疗决定，紧张是很正常的。我们先理解就诊目的与您的顾虑，再准确传达、确认重点、减少误解。",
         point1: { title: "听懂语境", body: "结合科室、项目与客户顾虑理解真正意图。" },
         point2: { title: "准确传达", body: "不夸大、不省略，保留医生说明的专业边界。" },
         point3: { title: "双向确认", body: "整理关键问题，帮助双方确认理解一致。" },
@@ -51,17 +57,18 @@
         business: { label: "FOR CLINICS & AGENCIES", title: "诊所与医疗服务机构", body: "按客群、科室与排班需求协调合适口译员，稳定客户沟通体验。", li1: "多门店 · 多日程排班", li2: "中国客户现场接待", li3: "资料与术语标准化", li4: "长期协作窗口" }
       },
       process: {
-        kicker: "HOW IT WORKS", title: "从咨询到现场，四步完成", lead: "只需先提供科室、时间与地点。我们会确认需求后再匹配，不需要立即决定。",
+        kicker: "HOW IT WORKS", title: "Jstar 四步安心流程", lead: "只需先提供科室、时间与地点。我们会确认需求后再匹配，不需要立即决定。",
         step1: { title: "提交需求", body: "科室 · 日期 · 地点 · 所需范围" },
         step2: { title: "确认与报价", body: "核对难度、时长与行程细节" },
         step3: { title: "匹配口译员", body: "按经验、科室与时间安排" },
         step4: { title: "现场与跟进", body: "陪同沟通，必要时整理后续重点" },
-        privacy: { title: "隐私从第一次咨询开始", body: "个人资料、就诊信息与现场沟通内容均按保密原则处理，仅用于本次服务安排。" }
+        privacy: { title: "隐私从第一次咨询开始", body: "个人资料、就诊信息与现场沟通内容均按保密原则处理，仅用于本次服务安排。" },
+        promise: { title: "我们的承诺", p1: { title: "不夸大、不省略", body: "如实传达医生的说明，不添加、不美化。" }, p2: { title: "不替您做决定", body: "口译员不提供医疗建议，治疗与费用由您与医生决定。" }, p3: { title: "先说清，再开始", body: "范围与报价确认后才开始服务，可先咨询，无需立即决定。" } }
       },
       cases: {
-        kicker: "SELECTED SCENARIOS", title: "常见服务场景", lead: "以下内容均为匿名化场景说明，用来帮助您判断需要哪种支持。",
-        case1: { title: "江南皮肤科项目咨询", body: "协助比较项目差异、注意事项与恢复期，并现场确认客户关心的问题。", result: "重点：选择依据清晰" },
-        case2: { title: "整形外科术前与复诊", body: "准确传达风险、预期与术后护理，帮助双方再次确认理解一致。", result: "重点：风险信息不遗漏" },
+        kicker: "SELECTED SCENARIOS", title: "常见服务场景", lead: "以下为示例场景，并非真实个案，仅用于说明我们如何提供支持。",
+        case1: { title: "江南皮肤科项目咨询", body: "第一次在韩国做皮肤项目咨询，担心听不懂项目差异和恢复期。我们逐项传达医生的说明，并把您想问的问题提前列好，当场确认。", result: "重点：选择依据清晰" },
+        case2: { title: "整形外科术前与复诊", body: "术前与复诊最怕漏掉风险和护理要点。我们准确传达风险、预期与术后护理，并在结束前与您再次确认理解一致。", result: "重点：风险信息不遗漏" },
         case3: { title: "多客户多时段排班", body: "为诊所或服务机构协调多名口译员，统一变更与现场沟通窗口。", result: "重点：减少排班断点" }
       },
       faq: {
@@ -71,7 +78,11 @@
         q3: "费用如何计算？", a3: "根据时长、地点、科室难度、是否需要多日程排班及文件准备等因素报价，确认后再开始服务。",
         q4: "如何保护就诊信息？", a4: "口译员遵循保密原则，个人资料和诊疗内容仅用于服务安排与现场沟通，不对外公开。",
         q5: "诊所可以长期合作吗？", a5: "可以。支持按门店、科室、客群和时段建立长期协作流程，也可先从单次服务开始。",
-        q6: "医疗文件也可以翻译吗？", a6: "支持诊断书、检查报告、同意书、术后指导等中韩翻译。请先发送文件类型与页数确认范围。"
+        q6: "医疗文件也可以翻译吗？", a6: "支持诊断书、检查报告、同意书、术后指导等中韩翻译。请先发送文件类型与页数确认范围。",
+        q7: "口译员会给我医疗建议吗？", a7: "不会。口译员只负责准确传达，不提供医疗建议，也不替医生或您做决定。治疗与费用由您与医生决定。",
+        q8: "会不会省略或美化医生说的话？", a8: "不会。我们遵循不夸大、不省略的原则，保留医生说明的专业边界。",
+        q9: "我不知道该问什么，怎么办？", a9: "可以先告诉我们就诊目的与顾虑，我们协助整理需要向医生确认的问题清单。",
+        q10: "咨询后一定要预订吗？", a10: "不需要。可以先发送科室、日期与地点了解情况，确认后再决定是否开始。"
       },
       contact: {
         kicker: "START A CONVERSATION", title: "<span class=\"contact-title-line\">先确认档期，</span><span class=\"contact-title-line\">再决定下一步。</span>", lead: "通过微信发送“科室 / 日期 / 地点”，我们会根据情况确认可安排范围。",
@@ -95,7 +106,7 @@
       hero: {
         eyebrow: "SEOUL · GANGNAM MEDICAL SUPPORT",
         title: "<span class=\"hero-title-line\">의료 커뮤니케이션을</span><em class=\"hero-title-line\">정확하고 안심되게.</em>",
-        lead: "초진 상담부터 수술 후 재진까지, 의료진의 설명을 정확히 전달하고 꼭 확인해야 할 질문을 정리합니다.",
+        lead: "한국에서 처음 진료받아 말이 통할지 걱정되시나요? 진료실에서 함께하며 의료진의 설명을 정확히 전하고, 꼭 묻고 싶은 질문을 끝까지 확인해 드립니다.",
         primary: "통역 일정 확인",
         secondary: "서비스 범위 보기",
         point1: "중국어 · 한국어 현장 지원",
@@ -106,6 +117,12 @@
         imageTitle: "중요한 내용을 놓치지 않는 현장 통역"
       },
       trust: { years: "년 종합 경력", sessions: "건 이상 통역 기록", area: "서울 · 강남 현장 지원", private: "비밀유지 프로세스" },
+      stakes: {
+        kicker: "WHAT'S AT STAKE", title: "소통의 빈틈은<br>귀국 후에야 드러나곤 합니다.", lead: "낯선 의료 환경에서는 아래와 같은 일이 생길 수 있습니다.",
+        item1: { title: "묻지 못한 질문", body: "진료 시간은 한정적이라, 묻고 싶은 것을 다 묻지 못하고 귀국한 뒤에야 궁금증이 남아 있음을 알게 됩니다." },
+        item2: { title: "놓친 설명", body: "주의사항, 금기와 재진 일정을 잘못 듣거나 놓치면 수술 후 관리에 영향을 줄 수 있습니다." },
+        item3: { title: "이해하지 못한 동의", body: "동의서, 비용과 진행 방식을 충분히 이해하지 못한 채 서명하면 나중에 이견이 생기기 쉽습니다." }
+      },
       services: {
         kicker: "WHAT WE DO",
         title: "언어만 번역하는 것이 아니라,<br>의료 현장을 이해합니다.",
@@ -118,7 +135,7 @@
       approach: {
         kicker: "OUR APPROACH",
         title: "좋은 의료 통역은<br>세 주체 모두에게 확신을 줍니다.",
-        lead: "진료 목적과 현장 역할을 먼저 이해한 뒤 내용을 정확히 전달하고, 핵심을 재확인해 오해를 줄입니다.",
+        lead: "낯선 나라에서 의료 결정을 앞두면 긴장되는 것이 당연합니다. 진료 목적과 걱정되는 점을 먼저 이해한 뒤 내용을 정확히 전달하고, 핵심을 재확인해 오해를 줄입니다.",
         point1: { title: "맥락 이해", body: "진료과, 시술과 고객의 우려를 함께 보고 의도를 파악합니다." },
         point2: { title: "정확한 전달", body: "과장하거나 생략하지 않고 의료진 설명의 전문적 경계를 지킵니다." },
         point3: { title: "양방향 확인", body: "핵심 질문을 정리하고 양측의 이해가 일치하는지 확인합니다." },
@@ -132,17 +149,18 @@
         business: { label: "FOR CLINICS & AGENCIES", title: "병원 및 의료 서비스 기관", body: "고객군, 진료과와 일정에 맞는 통역사를 조율해 일관된 고객 소통 경험을 만듭니다.", li1: "다지점 · 다중 일정 배치", li2: "중국 고객 현장 응대", li3: "자료와 용어 표준화", li4: "장기 협업 창구" }
       },
       process: {
-        kicker: "HOW IT WORKS", title: "문의부터 현장까지, 네 단계", lead: "진료과, 시간과 장소만 먼저 알려주세요. 요청을 확인한 뒤 매칭하므로 바로 결정하지 않아도 됩니다.",
+        kicker: "HOW IT WORKS", title: "Jstar 4단계 안심 절차", lead: "진료과, 시간과 장소만 먼저 알려주세요. 요청을 확인한 뒤 매칭하므로 바로 결정하지 않아도 됩니다.",
         step1: { title: "요청 전달", body: "진료과 · 날짜 · 장소 · 필요 범위" },
         step2: { title: "확인 및 견적", body: "난이도, 시간과 동선 세부 확인" },
         step3: { title: "통역사 매칭", body: "경험, 진료과와 일정에 맞춰 배정" },
         step4: { title: "현장 및 후속", body: "동행 통역과 필요 시 후속 내용 정리" },
-        privacy: { title: "첫 문의부터 지키는 개인정보", body: "개인정보, 진료 정보와 현장 대화는 비밀유지 원칙에 따라 이번 서비스 진행 목적으로만 처리합니다." }
+        privacy: { title: "첫 문의부터 지키는 개인정보", body: "개인정보, 진료 정보와 현장 대화는 비밀유지 원칙에 따라 이번 서비스 진행 목적으로만 처리합니다." },
+        promise: { title: "우리의 약속", p1: { title: "부풀리지 않고, 빼지 않습니다", body: "의료진의 설명을 있는 그대로 전하며 더하거나 미화하지 않습니다." }, p2: { title: "대신 결정하지 않습니다", body: "통역사는 의료 조언을 하지 않으며, 치료와 비용은 고객과 의료진이 결정합니다." }, p3: { title: "먼저 설명하고, 그다음 시작합니다", body: "범위와 견적을 확인한 뒤 서비스를 시작하며, 먼저 문의만 해도 됩니다." } }
       },
       cases: {
-        kicker: "SELECTED SCENARIOS", title: "주요 서비스 장면", lead: "아래 내용은 필요한 지원 범위를 판단할 수 있도록 익명화한 상황 예시입니다.",
-        case1: { title: "강남 피부과 시술 상담", body: "시술 차이, 주의사항과 회복 기간을 비교하고 고객이 궁금한 점을 현장에서 확인합니다.", result: "핵심: 선택 기준 명확화" },
-        case2: { title: "성형외과 수술 전·재진", body: "위험, 기대 결과와 수술 후 관리 사항을 정확히 전달하고 양측의 이해를 재확인합니다.", result: "핵심: 위험 정보 누락 방지" },
+        kicker: "SELECTED SCENARIOS", title: "주요 서비스 장면", lead: "아래는 서비스 방식을 설명하기 위한 예시 상황이며, 실제 사례가 아닙니다.",
+        case1: { title: "강남 피부과 시술 상담", body: "한국에서 처음 피부과 시술 상담을 받아 시술 차이와 회복 기간이 이해될지 걱정되는 경우입니다. 의료진의 설명을 항목별로 전하고, 묻고 싶은 질문을 미리 정리해 현장에서 확인합니다.", result: "핵심: 선택 기준 명확화" },
+        case2: { title: "성형외과 수술 전·재진", body: "수술 전·재진에서는 위험과 관리 사항을 놓치기 쉽습니다. 위험, 기대 결과와 수술 후 관리를 정확히 전하고 마무리 전에 이해가 일치하는지 다시 확인합니다.", result: "핵심: 위험 정보 누락 방지" },
         case3: { title: "다수 고객 다중 일정", body: "병원 또는 기관을 위해 여러 통역사를 조율하고 일정 변경과 현장 소통 창구를 일원화합니다.", result: "핵심: 일정 공백 최소화" }
       },
       faq: {
@@ -152,7 +170,11 @@
         q3: "비용은 어떻게 산정하나요?", a3: "시간, 장소, 진료과 난이도, 다중 일정 배치와 사전 문서 준비 여부 등을 기준으로 견적을 안내하고 확인 후 진행합니다.",
         q4: "진료 정보는 어떻게 보호하나요?", a4: "통역사는 비밀유지 원칙을 준수하며 개인정보와 진료 내용은 서비스 배정과 현장 소통 목적으로만 사용합니다.",
         q5: "병원과 장기 협업도 가능한가요?", a5: "가능합니다. 지점, 진료과, 고객군과 시간대에 맞춘 협업 프로세스를 만들 수 있으며 단건으로 먼저 시작할 수도 있습니다.",
-        q6: "의료 문서 번역도 가능한가요?", a6: "진단서, 검사 결과, 동의서, 수술 후 안내 등의 중한 번역을 지원합니다. 문서 종류와 페이지 수를 먼저 보내주세요."
+        q6: "의료 문서 번역도 가능한가요?", a6: "진단서, 검사 결과, 동의서, 수술 후 안내 등의 중한 번역을 지원합니다. 문서 종류와 페이지 수를 먼저 보내주세요.",
+        q7: "통역사가 의료 조언도 해주나요?", a7: "아니요. 통역사는 정확한 전달만 담당하며 의료 조언을 하거나 의료진·고객을 대신해 결정하지 않습니다. 치료와 비용은 고객과 의료진이 결정합니다.",
+        q8: "의료진의 말을 줄이거나 좋게 포장하지는 않나요?", a8: "그렇지 않습니다. 부풀리지 않고 빼지 않는 원칙으로 의료진 설명의 전문적 경계를 지킵니다.",
+        q9: "무엇을 물어봐야 할지 모르겠어요.", a9: "진료 목적과 걱정되는 점을 먼저 알려주세요. 의료진에게 확인할 질문 목록을 함께 정리해 드립니다.",
+        q10: "문의하면 꼭 예약해야 하나요?", a10: "아니요. 진료과, 날짜와 장소를 먼저 보내 상황을 확인하고, 그 뒤에 진행 여부를 결정하셔도 됩니다."
       },
       contact: {
         kicker: "START A CONVERSATION", title: "<span class=\"contact-title-line\">일정을 먼저 확인하고,</span><span class=\"contact-title-line\">다음 단계를 결정하세요.</span>", lead: "위챗으로 ‘진료과 / 날짜 / 장소’를 보내주시면 가능한 서비스 범위를 확인합니다.",
@@ -176,7 +198,7 @@
       hero: {
         eyebrow: "SEOUL · GANGNAM MEDICAL SUPPORT",
         title: "<span class=\"hero-title-line\">Clear communication.</span><em class=\"hero-title-line\">Confident care.</em>",
-        lead: "From the first consultation to post-procedure follow-ups, we accurately convey medical explanations and help organize the questions that matter.",
+        lead: "Worried about being understood at a clinic in Korea? We stay with you in the room, convey the doctor’s explanations accurately, and help you ask the questions that matter.",
         primary: "Check interpreter availability",
         secondary: "Explore our services",
         point1: "Chinese · Korean on-site support",
@@ -187,6 +209,12 @@
         imageTitle: "On-site interpretation without missing vital details"
       },
       trust: { years: "years’ combined experience", sessions: "service sessions", area: "on-site support in Seoul · Gangnam", private: "confidential process" },
+      stakes: {
+        kicker: "WHAT'S AT STAKE", title: "Communication gaps often<br>surface only after you’re home.", lead: "In an unfamiliar medical setting, situations like these can happen.",
+        item1: { title: "Questions left unasked", body: "Appointments are short. You may only realize what you forgot to ask after returning home." },
+        item2: { title: "Instructions missed", body: "Misheard or missed precautions, restrictions, or follow-up dates can affect your aftercare." },
+        item3: { title: "Consent not fully understood", body: "Signing consent forms, costs, or plans you did not fully understand can lead to disagreements later." }
+      },
       services: {
         kicker: "WHAT WE DO",
         title: "More than translating words—<br>we understand the medical setting.",
@@ -199,7 +227,7 @@
       approach: {
         kicker: "OUR APPROACH",
         title: "Good medical interpretation<br>gives everyone confidence.",
-        lead: "We first understand the purpose of the visit and each person’s role, then communicate accurately, confirm key points, and reduce misunderstandings.",
+        lead: "Facing a medical decision in an unfamiliar country is stressful. We first understand the purpose of your visit and your concerns, then communicate accurately, confirm key points, and reduce misunderstandings.",
         point1: { title: "Understand the context", body: "We consider the specialty, treatment, and patient concerns to understand the real intent." },
         point2: { title: "Communicate accurately", body: "We neither exaggerate nor omit, preserving the professional boundaries of the clinician’s explanation." },
         point3: { title: "Confirm both ways", body: "We organize key questions and help everyone confirm a shared understanding." },
@@ -213,17 +241,18 @@
         business: { label: "FOR CLINICS & AGENCIES", title: "Clinics and medical service providers", body: "Coordinate interpreters by patient group, specialty, and schedule for a consistent communication experience.", li1: "Multi-location · multi-day scheduling", li2: "On-site support for Chinese clients", li3: "Standardized materials and terminology", li4: "Long-term coordination partner" }
       },
       process: {
-        kicker: "HOW IT WORKS", title: "From inquiry to on-site support in four steps", lead: "Start with the specialty, time, and location. We review the request before matching, so there is no need to decide immediately.",
+        kicker: "HOW IT WORKS", title: "The Jstar four-step process", lead: "Start with the specialty, time, and location. We review the request before matching, so there is no need to decide immediately.",
         step1: { title: "Send your request", body: "Specialty · date · location · support needed" },
         step2: { title: "Confirm and quote", body: "Review complexity, duration, and itinerary details" },
         step3: { title: "Match an interpreter", body: "Assign by experience, specialty, and availability" },
         step4: { title: "On-site and follow-up", body: "Interpret on site and summarize next steps when needed" },
-        privacy: { title: "Privacy starts with your first inquiry", body: "Personal details, medical information, and on-site conversations are handled confidentially and used only to arrange the requested service." }
+        privacy: { title: "Privacy starts with your first inquiry", body: "Personal details, medical information, and on-site conversations are handled confidentially and used only to arrange the requested service." },
+        promise: { title: "Our commitments", p1: { title: "No exaggeration, no omission", body: "We convey the doctor’s explanations as they are—nothing added, nothing softened." }, p2: { title: "We don’t decide for you", body: "Interpreters do not give medical advice. Treatment and costs are decided by you and your doctor." }, p3: { title: "Clarity first, then we begin", body: "Service starts only after the scope and quote are confirmed. You can simply ask first." } }
       },
       cases: {
-        kicker: "SELECTED SCENARIOS", title: "Common service scenarios", lead: "These anonymized scenarios can help you identify the type of support you may need.",
-        case1: { title: "Dermatology consultation in Gangnam", body: "Compare treatment options, precautions, and recovery times, while confirming the patient’s key questions on site.", result: "Focus: clear decision criteria" },
-        case2: { title: "Plastic surgery consultation and follow-up", body: "Communicate risks, expectations, and aftercare accurately and reconfirm that everyone shares the same understanding.", result: "Focus: no missing risk information" },
+        kicker: "SELECTED SCENARIOS", title: "Common service scenarios", lead: "These are illustrative scenarios to explain how we support you, not real client cases.",
+        case1: { title: "Dermatology consultation in Gangnam", body: "A first dermatology consultation in Korea, with worries about understanding the treatment differences and recovery time. We relay the doctor’s explanation point by point and confirm the questions you prepared in advance.", result: "Focus: clear decision criteria" },
+        case2: { title: "Plastic surgery consultation and follow-up", body: "Before surgery and at follow-ups, risks and aftercare points are easy to miss. We convey risks, expectations, and aftercare accurately and reconfirm that you understand before the visit ends.", result: "Focus: no missing risk information" },
         case3: { title: "Multiple patients and time slots", body: "Coordinate multiple interpreters for clinics or agencies through one channel for schedule changes and on-site communication.", result: "Focus: fewer scheduling gaps" }
       },
       faq: {
@@ -233,7 +262,11 @@
         q3: "How is the fee calculated?", a3: "Quotes are based on duration, location, specialty complexity, multi-day scheduling, and any advance document preparation. Service begins only after confirmation.",
         q4: "How do you protect medical information?", a4: "Interpreters follow strict confidentiality principles. Personal and medical information is used only for service coordination and on-site communication.",
         q5: "Can clinics work with you long term?", a5: "Yes. We can build a long-term workflow by location, specialty, patient group, and time slot, or begin with a single assignment.",
-        q6: "Do you translate medical documents?", a6: "Yes. We translate medical certificates, test results, consent forms, and aftercare guides between Chinese and Korean. Send the document type and page count to confirm the scope."
+        q6: "Do you translate medical documents?", a6: "Yes. We translate medical certificates, test results, consent forms, and aftercare guides between Chinese and Korean. Send the document type and page count to confirm the scope.",
+        q7: "Will the interpreter give me medical advice?", a7: "No. Interpreters only convey information accurately. They do not give medical advice or decide for you or your doctor. Treatment and costs are decided by you and your doctor.",
+        q8: "Do you ever shorten or soften what the doctor says?", a8: "No. We follow a no-exaggeration, no-omission principle and keep the professional limits of the doctor’s explanation.",
+        q9: "I don’t know what to ask. What should I do?", a9: "Tell us the purpose of your visit and your concerns first. We will help you organize a list of questions to confirm with the doctor.",
+        q10: "Do I have to book after asking?", a10: "No. You can send the specialty, date, and location to learn about your options, then decide whether to proceed."
       },
       contact: {
         kicker: "START A CONVERSATION", title: "<span class=\"contact-title-line\">Check availability first,</span><span class=\"contact-title-line\">then decide your next step.</span>", lead: "Send the specialty, date, and location on WeChat, and we will confirm the available service options.",
