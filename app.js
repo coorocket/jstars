@@ -85,6 +85,7 @@
         q10: "咨询后一定要预订吗？", a10: "不需要。可以先发送科室、日期与地点了解情况，确认后再决定是否开始。"
       },
       contact: {
+        checklistHref: "assets/checklist-zh.pdf", checklist: "免费下载《就诊前问题清单》（PDF）", ps: "P.S. 还没决定也没关系。先下载清单，带着问题去就诊，会更安心。",
         kicker: "START A CONVERSATION", title: "<span class=\"contact-title-line\">先确认档期，</span><span class=\"contact-title-line\">再决定下一步。</span>", lead: "通过微信发送“科室 / 日期 / 地点”，我们会根据情况确认可安排范围。",
         templateLabel: "可直接复制这段咨询模板", template: "科室：<br>日期 / 时间：<br>地点：<br>需要范围：", templateText: "科室：\n日期 / 时间：\n地点：\n需要范围：",
         copy: "复制", wechat: "打开微信二维码", email: "发送邮件", qrAlt: "Jstar Studio 微信二维码", qrTitle: "微信扫码咨询", qrBody: "添加后发送科室、时间与地点"
@@ -177,6 +178,7 @@
         q10: "문의하면 꼭 예약해야 하나요?", a10: "아니요. 진료과, 날짜와 장소를 먼저 보내 상황을 확인하고, 그 뒤에 진행 여부를 결정하셔도 됩니다."
       },
       contact: {
+        checklistHref: "assets/checklist-ko.pdf", checklist: "무료 다운로드 「진료 전 질문 체크리스트」(PDF)", ps: "추신. 아직 정하지 않으셨어도 괜찮습니다. 체크리스트를 내려받아 질문을 챙겨 진료에 가시면 한결 마음이 놓입니다.",
         kicker: "START A CONVERSATION", title: "<span class=\"contact-title-line\">일정을 먼저 확인하고,</span><span class=\"contact-title-line\">다음 단계를 결정하세요.</span>", lead: "위챗으로 ‘진료과 / 날짜 / 장소’를 보내주시면 가능한 서비스 범위를 확인합니다.",
         templateLabel: "아래 문의 양식을 바로 복사하세요", template: "진료과：<br>날짜 / 시간：<br>장소：<br>필요 범위：", templateText: "진료과：\n날짜 / 시간：\n장소：\n필요 범위：",
         copy: "복사", wechat: "위챗 QR 열기", email: "이메일 보내기", qrAlt: "Jstar Studio 위챗 QR 코드", qrTitle: "위챗 QR 상담", qrBody: "추가 후 진료과, 시간과 장소를 보내주세요"
@@ -269,6 +271,7 @@
         q10: "Do I have to book after asking?", a10: "No. You can send the specialty, date, and location to learn about your options, then decide whether to proceed."
       },
       contact: {
+        checklistHref: "assets/checklist-en.pdf", checklist: "Free download: Before-Your-Visit Question Checklist (PDF)", ps: "P.S. No need to decide yet. Download the checklist and bring your questions to the appointment for more peace of mind.",
         kicker: "START A CONVERSATION", title: "<span class=\"contact-title-line\">Check availability first,</span><span class=\"contact-title-line\">then decide your next step.</span>", lead: "Send the specialty, date, and location on WeChat, and we will confirm the available service options.",
         templateLabel: "Copy this inquiry template", template: "Specialty:<br>Date / time:<br>Location:<br>Support needed:", templateText: "Specialty:\nDate / time:\nLocation:\nSupport needed:",
         copy: "Copy", wechat: "Open WeChat QR", email: "Send email", qrAlt: "Jstar Studio WeChat QR code", qrTitle: "Scan to contact us on WeChat", qrBody: "Send the specialty, time, and location after adding us"
@@ -314,6 +317,10 @@
     document.querySelectorAll("[data-i18n-html]").forEach((element) => {
       const value = byPath(dictionary, element.dataset.i18nHtml);
       if (typeof value === "string") element.innerHTML = value;
+    });
+    document.querySelectorAll("[data-i18n-href]").forEach((element) => {
+      const value = byPath(dictionary, element.dataset.i18nHref);
+      if (typeof value === "string") element.setAttribute("href", value);
     });
     document.querySelectorAll("[data-i18n-alt]").forEach((element) => {
       const value = byPath(dictionary, element.dataset.i18nAlt);
