@@ -17,6 +17,12 @@ const PAGES = [
   { lang: "ko", dir: "ko/", ogLocale: "ko_KR", switchLabel: ["한국어", "한국어"] },
   { lang: "en", dir: "en/", ogLocale: "en_US", switchLabel: ["EN", "English"] },
 ];
+const OG_ALT = {
+  "zh-CN": "韩国医美中文陪同翻译 · 首尔江南 Jstar Studio",
+  "zh-TW": "韓國醫美中文陪同翻譯 · 首爾江南 Jstar Studio",
+  ko: "중국어 의료통역 · 서울 강남 제이스타",
+  en: "Mandarin medical interpreter in Seoul · Jstar Studio",
+};
 const HREFLANG = [
   ["zh-CN", ""], ["zh-TW", "zh-tw/"], ["zh-HK", "zh-tw/"], ["ko", "ko/"], ["en", "en/"], ["x-default", "en/"],
 ];
@@ -82,6 +88,7 @@ function langSwitch(current, base, mobile) {
 
 function headSeo(page, dict) {
   const url = `${ORIGIN}/${page.dir}`;
+  const ogImage = `${ORIGIN}/assets/og/og-${page.lang}.jpg`;
   const { title, description } = dict.meta;
   const t = escAttr(title);
   const d = escAttr(description);
@@ -111,14 +118,15 @@ ${alternates}
   <meta property="og:title" content="${t}" />
   <meta property="og:description" content="${d}" />
   <meta property="og:url" content="${url}" />
-  <meta property="og:image" content="${ORIGIN}/assets/og.jpg" />
-  <meta property="og:image:width" content="1536" />
-  <meta property="og:image:height" content="1024" />
+  <meta property="og:image" content="${ogImage}" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="${escAttr(OG_ALT[page.lang])}" />
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="${t}" />
   <meta name="twitter:description" content="${d}" />
-  <meta name="twitter:image" content="${ORIGIN}/assets/og.jpg" />
+  <meta name="twitter:image" content="${ogImage}" />
 
   <script type="application/ld+json">
 ${ldText}
