@@ -1157,3 +1157,106 @@ a.lang-button { display: inline-grid; place-items: center; width: auto; min-widt
 @media (max-width: 560px) {
   .card-photo { margin-bottom: 22px; }
 }
+
+/* ---- Renewal 1: per-language home (B2B ko / B2C zh-CN, zh-TW, en) ---- */
+html[lang="en"] body { font-family: Inter, "Avenir Next", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+
+/* brand: small line under the logo */
+.brand-copy small { display: block; margin-top: 3px; font-size: 9px; font-weight: 600; letter-spacing: .04em; white-space: nowrap; }
+html[lang="en"] .brand-copy small { font-size: 8px; letter-spacing: .08em; }
+@media (max-width: 1180px) and (min-width: 1021px) { .primary-nav { gap: 22px; } }
+
+/* hero */
+.hero-actions { flex-wrap: wrap; }
+.hero-steps b { line-height: 1.4; word-break: keep-all; }
+html[lang="ko"] .hero-steps { max-width: 920px; }
+@media (max-width: 620px) {
+  .hero-steps li { grid-template-columns: 1fr; gap: 2px; }
+}
+
+/* proof row: big word above, small caption below */
+.trust-row > div { flex-direction: column; gap: 4px; text-align: center; }
+.trust-row strong { word-break: keep-all; }
+@media (max-width: 620px) {
+  .trust-row > div { align-items: flex-start; text-align: left; }
+}
+
+/* service cards without the corner symbol; five-card layout */
+.service-card h3 { margin-top: 40px; }
+.service-grid--five .service-card:first-child { grid-column: 1 / -1; min-height: 0; }
+@media (max-width: 620px) { .service-card h3 { margin-top: 32px; } }
+
+/* comparison table (ko): only the table scrolls sideways on narrow screens */
+.table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; border-radius: var(--radius); background: var(--paper); }
+.compare-table { width: 100%; min-width: 680px; border-collapse: collapse; font-size: 15px; }
+.compare-table th, .compare-table td { padding: 20px 22px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; line-height: 1.5; }
+.compare-table tbody tr:last-child th, .compare-table tbody tr:last-child td { border-bottom: 0; }
+.compare-table thead th { color: var(--ink); font-size: 16px; font-weight: 700; }
+.compare-table tbody th { width: 16%; color: var(--muted); font-size: 13px; font-weight: 600; }
+.compare-table td { color: var(--muted); }
+.compare-table .is-featured { color: #fff; background: var(--ink); font-weight: 600; border-bottom-color: rgba(255,255,255,.14); }
+.compare-table thead .is-featured { color: var(--mint); }
+
+/* three-step process */
+.process-list--three { grid-template-columns: repeat(3, 1fr); }
+.section-cta { display: flex; justify-content: center; margin-top: 32px; }
+@media (max-width: 820px) {
+  .process-list--three { grid-template-columns: 1fr; }
+  .process-list--three li, .process-list--three li:nth-child(n) { min-height: 150px; }
+}
+@media (max-width: 620px) {
+  .process-list--three li > div, .process-list--three li:nth-child(n) > div { left: 68px; right: 20px; bottom: 24px; }
+  .section-cta .button { width: 100%; }
+}
+
+/* rates */
+.rate-grid { display: grid; gap: 16px; }
+.rate-grid--three { grid-template-columns: repeat(3, 1fr); }
+.rate-grid--two { grid-template-columns: repeat(2, 1fr); max-width: 860px; margin-inline: auto; }
+.rate-card { padding: 36px; border-radius: var(--radius); background: var(--sand); }
+.rate-card h3 { margin: 0 0 28px; color: var(--muted); font-size: 15px; font-weight: 600; letter-spacing: -.01em; }
+.rate-price { margin: 0 0 10px; color: var(--ink); font-size: clamp(24px, 2.6vw, 32px); font-weight: 700; line-height: 1.25; letter-spacing: -.02em; }
+.rate-note { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.6; }
+.rate-card--featured { color: #fff; background: var(--ink); }
+.rate-card--featured h3 { color: var(--mint); }
+.rate-card--featured .rate-price { color: #fff; }
+.rate-card--featured .rate-note { color: rgba(255,255,255,.68); }
+.rate-footnote { max-width: 760px; margin: 28px auto 0; color: var(--muted); font-size: 14px; line-height: 1.7; text-align: center; }
+@media (max-width: 820px) {
+  .rate-grid--three, .rate-grid--two { grid-template-columns: 1fr; }
+  .rate-card { padding: 28px; }
+  .rate-card h3 { margin-bottom: 18px; }
+}
+
+/* interpreter */
+.interpreter-grid { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: clamp(32px, 6vw, 80px); }
+.interpreter-copy h2 { margin: 0 0 28px; color: var(--ink); font-size: clamp(34px, 5vw, 64px); font-weight: 700; line-height: 1.08; letter-spacing: -.03em; }
+.interpreter-copy p { margin: 0 0 16px; color: var(--muted); font-size: 17px; line-height: 1.75; }
+.interpreter-copy p:last-child { margin-bottom: 0; color: var(--text); font-weight: 500; }
+.interpreter-photo { margin: 0; }
+.interpreter-photo img { width: 100%; height: auto; aspect-ratio: 1600 / 1195; object-fit: cover; border-radius: var(--radius); background: var(--sand); }
+@media (max-width: 820px) {
+  .interpreter-grid { grid-template-columns: 1fr; }
+  .interpreter-copy p { font-size: 16px; }
+}
+
+/* scenarios */
+.case-meta { justify-content: flex-start; }
+.case-card h3 { margin-top: 28px; }
+.cases--sand { background: var(--sand); }
+.cases--sand .case-card { background: var(--paper); }
+
+/* next step (ko) */
+.next-step-inner { max-width: 820px; text-align: center; }
+.next-step-inner h2 { margin: 0 0 22px; color: #fff; font-size: clamp(34px, 5vw, 64px); font-weight: 700; line-height: 1.08; letter-spacing: -.03em; }
+.next-step-inner p { margin: 0 auto 32px; max-width: 560px; color: rgba(255,255,255,.68); font-size: 18px; line-height: 1.6; }
+@media (max-width: 620px) { .next-step-inner .button { width: 100%; } }
+
+/* contact title is plain text with <br> now */
+html[lang="ko"] #contact-title { font-size: clamp(26px, 4.2vw, 54px); }
+@media (max-width: 620px) { html[lang="ko"] #contact-title { font-size: clamp(24px, 7.4vw, 36px); } }
+
+/* mobile bar: plain secondary button (en) */
+@media (max-width: 820px) {
+  .mobile-action-bar button.is-plain { color: var(--ink); background: transparent; }
+}
