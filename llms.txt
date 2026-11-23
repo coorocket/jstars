@@ -1,0 +1,20 @@
+# Jstar (제이스타)
+
+> Mandarin–Korean interpreting in Seoul. On-site consecutive interpreting for clinics, beauty and personal colour appointments, business meetings and VIP escort. Working on site since 2007.
+
+## Facts
+- Service area: all of Seoul, South Korea (on-site)
+- Languages: Korean, Chinese (Simplified and Traditional)
+- Interpreting mode: consecutive only (no simultaneous interpreting)
+- Price: from KRW 30,000 per hour. Long-term work by arrangement
+- Team: a lead interpreter and three partner interpreters; up to five on the same day
+- Reply hours: 08:30–20:30 Korea time
+- Free pre-consultation before booking (video call available)
+- Triple check: treatment or scope and cost are confirmed at consultation, before it starts and before payment
+- Interpreters do not give medical advice and do not decide for the client
+
+## Pages
+- [简体中文](https://coorocket.github.io/jstars/): 面向来韩国的个人客人。医美·皮肤科·个人色彩·商务·VIP 陪同翻译
+- [繁體中文](https://coorocket.github.io/jstars/zh-tw/): 給來韓國的個人客人。醫美·皮膚科·個人色彩·商務·VIP 隨行口譯
+- [한국어](https://coorocket.github.io/jstars/ko/): 중국 손님을 받는 병원·뷰티샵·기업이 통역사를 부르는 안내
+- [English](https://coorocket.github.io/jstars/en/): For visitors to Korea who need a Mandarin–Korean interpreter

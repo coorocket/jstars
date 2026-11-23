@@ -1,0 +1,295 @@
+{{> head}}
+
+  <header class="site-header" id="siteHeader">
+    <div class="nav-shell container">
+      <a class="brand" href="#hero" data-i18n-aria="brand.name">
+        <span class="brand-mark" aria-hidden="true"><span>J</span></span>
+        <span class="brand-copy"><strong data-i18n="brand.name"></strong><small data-i18n="brand.tagline"></small></span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="primaryNav" data-i18n-aria="a11y.openMenu">
+        <span></span><span></span>
+      </button>
+
+      <nav class="primary-nav" id="primaryNav" aria-label="Primary">
+        <a href="#services" data-i18n="nav.services"></a>
+        <a href="#process" data-i18n="nav.process"></a>
+        <a href="#rates" data-i18n="nav.rates"></a>
+        <a href="#interpreter" data-i18n="nav.interpreter"></a>
+        <a href="#faq" data-i18n="nav.faq"></a>
+        {{LANG_SWITCH_MOBILE}}
+      </nav>
+
+      <div class="nav-actions">
+        {{LANG_SWITCH_DESKTOP}}
+        <a class="button button--dark button--small" href="#contact" data-contact="tel" data-track="header_cta"><span data-i18n="phone.call"></span><span aria-hidden="true">↗</span></a>
+        <a class="button button--ghost button--small" href="#contact" data-contact="sms" data-track="header_cta"><span data-i18n="phone.sms"></span></a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+      <div class="hero-backdrop" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <h1 class="eyebrow"><span></span><span data-i18n="hero.eyebrow"></span></h1>
+          <p class="hero-title" id="hero-title" data-i18n-html="hero.title"></p>
+          <p class="hero-lead" data-i18n="hero.lead"></p>
+          <ul class="hero-steps">
+            <li><b data-i18n="hero.step1.label"></b><span data-i18n="hero.step1.text"></span></li>
+            <li><b data-i18n="hero.step2.label"></b><span data-i18n="hero.step2.text"></span></li>
+            <li><b data-i18n="hero.step3.label"></b><span data-i18n="hero.step3.text"></span></li>
+          </ul>
+          <div class="hero-actions">
+            <a class="button button--primary" href="#contact" data-contact="sms" data-track="hero_cta"><span data-i18n="hero.primary"></span><span aria-hidden="true">↗</span></a>
+            <a class="button button--ghost" href="#contact" data-contact="tel" data-track="hero_sub"><span data-i18n="phone.call"></span></a>
+          </div>
+          <p class="contact-note" data-i18n="hero.note"></p>
+          <div class="hero-actions hero-actions--secondary">
+            <button class="text-link" type="button" data-open-wechat data-track="hero_sub"><span data-i18n="nav.contact"></span><span aria-hidden="true">↗</span></button>
+          </div>
+          <div class="hero-reassurance" aria-label="Key benefits">
+            <span><i></i><span data-i18n="hero.point1"></span></span>
+            <span><i></i><span data-i18n="hero.point2"></span></span>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal reveal--delay">
+          <div class="hero-image-frame">
+            <img src="{{BASE}}assets/translation.webp" alt="" data-i18n-alt="hero.imageAlt" width="1024" height="1024" fetchpriority="high" />
+            <div class="image-label image-label--top"><span class="signal" aria-hidden="true"></span><span data-i18n="hero.availability"></span></div>
+            <div class="image-label image-label--bottom"><small data-i18n="hero.imageKicker"></small><strong data-i18n="hero.imageTitle"></strong></div>
+          </div>
+          <div class="hero-stamp" aria-hidden="true"><span>JSTAR</span><b>中文 · 한국어</b><span>SEOUL</span></div>
+        </div>
+      </div>
+
+      <div class="container trust-row" aria-label="Service highlights">
+        <div><strong data-i18n="trust.c1.big"></strong><span data-i18n="trust.c1.small"></span></div>
+        <div><strong data-i18n="trust.c2.big"></strong><span data-i18n="trust.c2.small"></span></div>
+        <div><strong data-i18n="trust.c3.big"></strong><span data-i18n="trust.c3.small"></span></div>
+        <div><strong data-i18n="trust.c4.big"></strong><span data-i18n="trust.c4.small"></span></div>
+      </div>
+    </section>
+
+    <section class="section section--stakes" id="stakes" aria-labelledby="stakes-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div><p class="section-kicker" data-i18n="stakes.kicker"></p><h2 id="stakes-title" data-i18n-html="stakes.title"></h2></div>
+          <p data-i18n="stakes.lead"></p>
+        </div>
+        <div class="stakes-grid">
+          <article class="stakes-card reveal"><span>01</span><h3 data-i18n="stakes.item1.title"></h3><p data-i18n="stakes.item1.body"></p></article>
+          <article class="stakes-card reveal"><span>02</span><h3 data-i18n="stakes.item2.title"></h3><p data-i18n="stakes.item2.body"></p></article>
+          <article class="stakes-card reveal"><span>03</span><h3 data-i18n="stakes.item3.title"></h3><p data-i18n="stakes.item3.body"></p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--light" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div><p class="section-kicker" data-i18n="services.kicker"></p><h2 id="services-title" data-i18n-html="services.title"></h2></div>
+          <p data-i18n="services.lead"></p>
+        </div>
+
+        <figure class="section-photo reveal"><img class="section-photo__img" src="{{BASE}}assets/img/service-consultation.webp" width="1600" height="893" alt="" data-i18n-alt="services.imageAlt" loading="lazy" decoding="async" /></figure>
+
+        <div class="service-grid">
+          <article class="service-card reveal">
+            <span class="card-number">01</span>
+            <h3 data-i18n="services.item1.title"></h3><p data-i18n="services.item1.body"></p>
+            <ul><li data-i18n="services.item1.tag1"></li><li data-i18n="services.item1.tag2"></li></ul>
+          </article>
+          <article class="service-card reveal">
+            <span class="card-number">02</span>
+            <h3 data-i18n="services.item2.title"></h3><p data-i18n="services.item2.body"></p>
+            <ul><li data-i18n="services.item2.tag1"></li><li data-i18n="services.item2.tag2"></li></ul>
+          </article>
+          <article class="service-card reveal">
+            <span class="card-number">03</span>
+            <h3 data-i18n="services.item3.title"></h3><p data-i18n="services.item3.body"></p>
+            <ul><li data-i18n="services.item3.tag1"></li><li data-i18n="services.item3.tag2"></li></ul>
+          </article>
+          <article class="service-card reveal">
+            <span class="card-number">04</span>
+            <h3 data-i18n="services.item4.title"></h3><p data-i18n="services.item4.body"></p>
+            <ul><li data-i18n="services.item4.tag1"></li><li data-i18n="services.item4.tag2"></li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--sand" id="compare" aria-labelledby="compare-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div><h2 id="compare-title" data-i18n-html="compare.title"></h2></div>
+        </div>
+        <div class="table-scroll reveal" tabindex="0" role="region" aria-labelledby="compare-title">
+          <table class="compare-table">
+            <thead>
+              <tr><td></td><th scope="col" data-i18n="compare.col1"></th><th scope="col" data-i18n="compare.col2"></th><th scope="col" class="is-featured" data-i18n="compare.col3"></th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row" data-i18n="compare.row1.label"></th><td data-i18n="compare.row1.a"></td><td data-i18n="compare.row1.b"></td><td class="is-featured" data-i18n="compare.row1.c"></td></tr>
+              <tr><th scope="row" data-i18n="compare.row2.label"></th><td data-i18n="compare.row2.a"></td><td data-i18n="compare.row2.b"></td><td class="is-featured" data-i18n="compare.row2.c"></td></tr>
+              <tr><th scope="row" data-i18n="compare.row3.label"></th><td data-i18n="compare.row3.a"></td><td data-i18n="compare.row3.b"></td><td class="is-featured" data-i18n="compare.row3.c"></td></tr>
+              <tr><th scope="row" data-i18n="compare.row4.label"></th><td data-i18n="compare.row4.a"></td><td data-i18n="compare.row4.b"></td><td class="is-featured" data-i18n="compare.row4.c"></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--ink" id="approach" aria-labelledby="approach-title">
+      <div class="container approach-grid">
+        <div class="approach-copy reveal">
+          <p class="section-kicker section-kicker--mint" data-i18n="approach.kicker"></p>
+          <h2 id="approach-title" data-i18n-html="approach.title"></h2>
+          <p class="approach-lead" data-i18n="approach.lead"></p>
+          <div class="approach-points">
+            <article><span>01</span><div><h3 data-i18n="approach.point1.title"></h3><p data-i18n="approach.point1.body"></p></div></article>
+            <article><span>02</span><div><h3 data-i18n="approach.point2.title"></h3><p data-i18n="approach.point2.body"></p></div></article>
+            <article><span>03</span><div><h3 data-i18n="approach.point3.title"></h3><p data-i18n="approach.point3.body"></p></div></article>
+          </div>
+        </div>
+        <div class="approach-visual reveal reveal--delay">
+          <div class="quote-mark" aria-hidden="true">“</div>
+          <blockquote data-i18n="approach.quote"></blockquote>
+          <div class="flow-card">
+            <div><span data-i18n="approach.flow.patient"></span><b>01</b></div><i aria-hidden="true">→</i>
+            <div><span data-i18n="approach.flow.interpreter"></span><b>02</b></div><i aria-hidden="true">→</i>
+            <div><span data-i18n="approach.flow.clinic"></span><b>03</b></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--sand" id="process" aria-labelledby="process-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div><p class="section-kicker" data-i18n="process.kicker"></p><h2 id="process-title" data-i18n="process.title"></h2></div>
+          <p data-i18n="process.lead"></p>
+        </div>
+        <ol class="process-list process-list--three">
+          <li class="reveal"><span>01</span><div><h3 data-i18n="process.step1.title"></h3><p data-i18n="process.step1.body"></p></div></li>
+          <li class="reveal"><span>02</span><div><h3 data-i18n="process.step2.title"></h3><p data-i18n="process.step2.body"></p></div></li>
+          <li class="reveal"><span>03</span><div><h3 data-i18n="process.step3.title"></h3><p data-i18n="process.step3.body"></p></div></li>
+        </ol>
+        <div class="section-cta reveal">
+          <a class="button button--primary" href="#contact" data-contact="sms" data-track="process_cta"><span data-i18n="hero.primary"></span><span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="privacy-note reveal">
+          <span class="privacy-icon" aria-hidden="true">P</span>
+          <div><h3 data-i18n="process.privacy.title"></h3><p data-i18n="process.privacy.body"></p></div>
+          <span class="privacy-word">CONFIDENTIAL</span>
+        </div>
+        <div class="promise reveal">
+          <h3 class="promise-title" data-i18n="process.promise.title"></h3>
+          <div class="promise-grid">
+            <div><h4 data-i18n="process.promise.p1.title"></h4><p data-i18n="process.promise.p1.body"></p></div>
+            <div><h4 data-i18n="process.promise.p2.title"></h4><p data-i18n="process.promise.p2.body"></p></div>
+            <div><h4 data-i18n="process.promise.p3.title"></h4><p data-i18n="process.promise.p3.body"></p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--light" id="rates" aria-labelledby="rates-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div><h2 id="rates-title" data-i18n="rates.title"></h2></div>
+        </div>
+        <div class="rate-grid rate-grid--three">
+          <article class="rate-card reveal"><h3 data-i18n="rates.r1.name"></h3><p class="rate-price" data-i18n="rates.r1.price"></p><p class="rate-note" data-i18n="rates.r1.note"></p></article>
+          <article class="rate-card rate-card--featured reveal"><h3 data-i18n="rates.r2.name"></h3><p class="rate-price" data-i18n="rates.r2.price"></p><p class="rate-note" data-i18n="rates.r2.note"></p></article>
+          <article class="rate-card reveal"><h3 data-i18n="rates.r3.name"></h3><p class="rate-price" data-i18n="rates.r3.price"></p><p class="rate-note" data-i18n="rates.r3.note"></p></article>
+        </div>
+        <p class="rate-footnote reveal" data-i18n="rates.note"></p>
+      </div>
+    </section>
+
+    <section class="section section--sand" id="interpreter" aria-labelledby="interpreter-title">
+      <div class="container interpreter-grid">
+        <div class="interpreter-copy reveal">
+          <h2 id="interpreter-title" data-i18n="interpreter.title"></h2>
+          <p data-i18n="interpreter.body"></p>
+          <p data-i18n="interpreter.body2"></p>
+        </div>
+        <figure class="interpreter-photo reveal reveal--delay"><img src="{{BASE}}assets/img/for-clinics-coordination.webp" width="1600" height="1195" alt="" data-i18n-alt="interpreter.imageAlt" loading="lazy" decoding="async" /></figure>
+      </div>
+    </section>
+
+    <section class="section cases" id="cases" aria-labelledby="cases-title">
+      <div class="container">
+        <div class="section-heading reveal"><div><p class="section-kicker" data-i18n="cases.kicker"></p><h2 id="cases-title" data-i18n="cases.title"></h2></div><p data-i18n="cases.lead"></p></div>
+        <div class="case-grid">
+          <article class="case-card reveal"><img class="card-photo" src="{{BASE}}assets/img/scene-dermatology.webp" width="1600" height="1195" alt="" data-i18n-alt="cases.item1.imageAlt" loading="lazy" decoding="async" /><div class="case-meta"><b>01</b></div><h3 data-i18n="cases.case1.title"></h3><p data-i18n="cases.case1.body"></p><span class="case-result" data-i18n="cases.case1.result"></span></article>
+          <article class="case-card reveal"><img class="card-photo" src="{{BASE}}assets/img/scene-plastic-surgery-followup.webp" width="1600" height="1195" alt="" data-i18n-alt="cases.item2.imageAlt" loading="lazy" decoding="async" /><div class="case-meta"><b>02</b></div><h3 data-i18n="cases.case2.title"></h3><p data-i18n="cases.case2.body"></p><span class="case-result" data-i18n="cases.case2.result"></span></article>
+          <article class="case-card reveal"><img class="card-photo" src="{{BASE}}assets/img/scene-multi-schedule.webp" width="1600" height="1195" alt="" data-i18n-alt="cases.item3.imageAlt" loading="lazy" decoding="async" /><div class="case-meta"><b>03</b></div><h3 data-i18n="cases.case3.title"></h3><p data-i18n="cases.case3.body"></p><span class="case-result" data-i18n="cases.case3.result"></span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--ink next-step" id="next" aria-labelledby="next-title">
+      <div class="container next-step-inner reveal">
+        <h2 id="next-title" data-i18n-html="next.title"></h2>
+        <p data-i18n="next.body"></p>
+        <a class="button button--mint" href="https://cmdlab.kr/" target="_blank" rel="noopener" data-track="next_cmdlab" data-channel="link"><span data-i18n="next.cta"></span><span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+    <section class="section faq" id="faq" aria-labelledby="faq-title">
+      <div class="container faq-grid">
+        <div class="faq-intro reveal">
+          <p class="section-kicker" data-i18n="faq.kicker"></p><h2 id="faq-title" data-i18n-html="faq.title"></h2>
+          <p data-i18n="faq.lead"></p>
+          <a class="text-link text-link--dark" href="#contact" data-contact="sms" data-track="faq_cta"><span data-i18n="faq.action"></span><span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="accordion reveal">
+{{FAQ_ITEMS}}
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-card reveal">
+        <div class="contact-copy">
+          <p class="section-kicker section-kicker--mint" data-i18n="contact.kicker"></p>
+          <h2 id="contact-title" data-i18n-html="contact.title"></h2>
+          <p data-i18n="contact.lead"></p>
+          <div class="message-template" aria-label="Inquiry template">
+            <div><small data-i18n="contact.templateLabel"></small><p id="inquiryTemplate" data-i18n-html="contact.template"></p></div>
+            <button class="copy-button" id="copyTemplate" type="button"><span data-i18n="contact.copy"></span><span aria-hidden="true">⧉</span></button>
+          </div>
+          <div class="contact-actions">
+            <a class="button button--mint" href="#contact" data-contact="sms" data-track="contact_cta"><span data-i18n="phone.sms"></span><span aria-hidden="true">↗</span></a>
+            <a class="button button--outline-light" href="#contact" data-contact="tel" data-track="contact_cta"><span data-i18n="phone.call"></span></a>
+            <button class="button button--outline-light" type="button" data-open-wechat data-track="contact_cta"><span data-i18n="contact.wechat"></span></button>
+            <a class="button button--outline-light" href="mailto:cmdlabkr@gmail.com?subject=Medical%20Interpretation%20Inquiry" data-track="contact_cta"><span data-i18n="contact.email"></span></a>
+          </div>
+          <p class="contact-note contact-note--light" data-i18n="phone.note"></p>
+          <a class="contact-email" href="mailto:cmdlabkr@gmail.com" data-track="contact_cta">cmdlabkr@gmail.com</a>
+          <a class="contact-checklist" href="{{BASE}}assets/checklist-ko.pdf" download data-i18n-href="contact.checklistHref" data-track="checklist_download"><span data-i18n="contact.checklist"></span><span aria-hidden="true">↓</span></a>
+          <p class="contact-ps" data-i18n="contact.ps"></p>
+        </div>
+        <div class="qr-panel">
+          <div class="qr-image-wrap"><img src="{{BASE}}assets/wechat-qr-640.png" alt="" data-i18n-alt="contact.qrAlt" width="640" height="640" loading="lazy" decoding="async" /></div>
+          <div class="qr-copy"><span class="signal" aria-hidden="true"></span><div><strong data-i18n="contact.qrTitle"></strong><small data-i18n="contact.qrBody"></small></div></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><a class="brand brand--footer" href="#hero"><span class="brand-mark" aria-hidden="true"><span>J</span></span><span class="brand-copy"><strong data-i18n="brand.name"></strong><small data-i18n="brand.tagline"></small></span></a><p data-i18n="footer.summary"></p></div>
+      <div class="footer-links"><a href="#services" data-i18n="nav.services"></a><a href="#process" data-i18n="nav.process"></a><a href="#rates" data-i18n="nav.rates"></a><a href="#interpreter" data-i18n="nav.interpreter"></a><a href="#faq" data-i18n="nav.faq"></a></div>
+      <div class="footer-meta"><span>SEOUL · KOREA</span><span>© <span id="year"></span> <span data-i18n="brand.name"></span></span></div>
+    </div>
+  </footer>
+
+  <div class="mobile-action-bar" aria-label="Quick contact"><a href="#contact" data-contact="tel" data-track="sticky_mobile"><span data-i18n="phone.call"></span></a><a class="is-primary" href="#contact" data-contact="sms" data-track="sticky_mobile"><span data-i18n="phone.sms"></span><span aria-hidden="true">↗</span></a></div>
+
+{{> foot}}

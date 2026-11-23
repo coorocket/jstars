@@ -1,0 +1,15 @@
+  <div class="modal" id="wechatModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-wechat></div>
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="wechat-title" tabindex="-1">
+      <button class="modal-close" type="button" data-close-wechat data-i18n-aria="a11y.closeModal"><span></span><span></span></button>
+      <p class="section-kicker" data-i18n="modal.kicker"></p><h2 id="wechat-title" data-i18n="modal.title"></h2><p data-i18n="modal.lead"></p>
+      <div class="modal-qr"><img src="{{BASE}}assets/wechat-qr-640.png" alt="" data-i18n-alt="contact.qrAlt" width="640" height="640" loading="lazy" decoding="async" /></div>
+      <div class="modal-tip"><span class="signal" aria-hidden="true"></span><span data-i18n="modal.tip"></span></div>
+      <a class="button button--dark" href="{{BASE}}assets/jstarstudio-wechat-qr.png" download="jstarstudio-wechat-qr.png" data-track="contact_cta" data-channel="download"><span data-i18n="modal.download"></span></a>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" data-i18n="toast.copied"></div>
+  <script src="{{BASE}}app.js?v={{ASSET_VERSION}}" defer></script>
+</body>
+</html>
